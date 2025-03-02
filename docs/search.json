@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "draft-data-doc.html",
+    "href": "draft-data-doc.html",
+    "title": "Appendix A — Draft: Data Documentation",
+    "section": "",
+    "text": "#1."
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "draft-data-doc.html#bridge-condition-report-nebraska.gov",
+    "href": "draft-data-doc.html#bridge-condition-report-nebraska.gov",
+    "title": "Appendix A — Draft: Data Documentation",
+    "section": "A.1 Bridge Condition Report (Nebraska.gov)",
+    "text": "A.1 Bridge Condition Report (Nebraska.gov)\nhttps://dot.nebraska.gov/media/mopjemdw/bridge-condition-report-summary.pdf\nThis data from March 2024 categorizes Nebraska’s bridges by ownership type and their condition after inspection. It shows the number of bridges, their total area, and the condition of each bridge (good, fair, poor, closed, and low load)\nOwnership Categories:\n\nCountry system\nFirst Class Cities\nState System\nNHS System\n\nCondition Classifications:\n\nGood\nFair\nPoor\nClosed\nLow Load"
+  },
+  {
+    "objectID": "draft-data-doc.html#national-bridge-inventory-nebraska-american-road-transportation-builders-association",
+    "href": "draft-data-doc.html#national-bridge-inventory-nebraska-american-road-transportation-builders-association",
+    "title": "Appendix A — Draft: Data Documentation",
+    "section": "A.2 National Bridge Inventory: Nebraska (American Road & Transportation Builders Association)",
+    "text": "A.2 National Bridge Inventory: Nebraska (American Road & Transportation Builders Association)\nhttps://artbabridgereport.org/state/profile/NE\nThis breaks down what bridges in Nebraska need repair. It sorts them in different ways like the country the most traveled bridges are in and includes the year build and number of daily crossings. It also includes bridge work that has been proposed and how much these repairs would cost."
+  }
+]

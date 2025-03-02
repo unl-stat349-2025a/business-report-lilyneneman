@@ -1,3 +1,30 @@
 ---
 title: "Draft: Data Documentation"
 ---
+
+## Bridge Condition Report (Nebraska.gov)
+
+<https://dot.nebraska.gov/media/mopjemdw/bridge-condition-report-summary.pdf>
+
+This data from March 2024 categorizes Nebraska's bridges by ownership type and their condition after inspection. It shows the number of bridges, their total area, and the condition of each bridge (good, fair, poor, closed, and low load)
+
+Ownership Categories:
+
+1.  Country system
+2.  First Class Cities
+3.  State System
+4.  NHS System
+
+Condition Classifications:
+
+1.  Good
+2.  Fair
+3.  Poor
+4.  Closed
+5.  Low Load
+
+## National Bridge Inventory: Nebraska (American Road & Transportation Builders Association)
+
+<https://artbabridgereport.org/state/profile/NE>
+
+This breaks down what bridges in Nebraska need repair. It sorts them in different ways like the country the most traveled bridges are in and includes the year build and number of daily crossings. It also includes bridge work that has been proposed and how much these repairs would cost.
