@@ -2,3 +2,34 @@
 title: "Draft: Results"
 ---
 
+## Bridge Condition by System
+
+![](photos/Screenshot 2025-03-30 at 8.04.05 PM.png){fig-align="center"}
+
+This stacked bar chart displays bridge conditions across various systems in Nebraska. The State System had the highest percentage of bridges in the Good condition (70.7%). First Class Cities had the second highest percentage in the Good condition (55%). The County System had the lowest percentage of Good condition bridges (46.7%). Bridges in Poor condition were the most common in the County System (8.3%).
+
+## Bridge Traffic vs Condition
+
+![](photos/Screenshot 2025-03-30 at 8.09.59 PM.png)
+
+The relationship between daily crossing and bridge condition was shown in this scatter plot. The data shows that bridges with higher crossing tend to be in worse condition. Poor condition bridges are seen to be associated with higher traffic volumes, while Good condition bridges tend to have lower traffic. However, the data points indicate considerate variabliity because there are some Good and Fair conditioned bridges that have high daily crossings.
+
+## Frequency of Bridge Condition by County
+
+![](photos/Screenshot 2025-03-30 at 8.13.08 PM.png)
+
+This bar chart displays the frequency of bridge conditions across different NE counties. Douglas County has the highest count of Fair condition bridges, followed by Sarpy County. The distribution shows the highest frequency of Fair bridges throughout Nebraska. Douglas County also has the highest frequency of Poor condition bridges.
+
+## Average Condition By Year Build
+
+![](photos/Screenshot 2025-03-30 at 8.16.32 PM.png)
+
+## Risk Levels by County
+
+![](photos/Screenshot 2025-03-30 at 8.19.45 PM.png)
+
+This stacked bar chart analyzes the distribution of risk levels across counties. Douglas County has the highest count of high risk bridges, followed by Sarpy County. The distribution of moderate and low risk bridges is more evenly spread across the other counties.
+
+## Implications
+
+These findings suggest that while there is some correlation between traffic volume and condition, other factors like age and maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions. Counties like Douglas and Sarpy currently require attention to ensure safety on their bridges.
