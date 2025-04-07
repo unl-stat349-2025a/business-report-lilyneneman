@@ -40,5 +40,100 @@
     "title": "Appendix A — Draft: Data Documentation",
     "section": "A.2 National Bridge Inventory: Nebraska (American Road & Transportation Builders Association)",
     "text": "A.2 National Bridge Inventory: Nebraska (American Road & Transportation Builders Association)\nhttps://artbabridgereport.org/state/profile/NE\nThis breaks down what bridges in Nebraska need repair. It sorts them in different ways like the country the most traveled bridges are in and includes the year build and number of daily crossings. It also includes bridge work that has been proposed and how much these repairs would cost."
+  },
+  {
+    "objectID": "draft-results.html#bridge-condition-by-system",
+    "href": "draft-results.html#bridge-condition-by-system",
+    "title": "Appendix B — Draft: Results",
+    "section": "B.1 Bridge Condition by System",
+    "text": "B.1 Bridge Condition by System\n\n\n\n\n\nThis stacked bar chart displays bridge conditions across various systems in Nebraska. The State System had the highest percentage of bridges in the Good condition (70.7%). First Class Cities had the second highest percentage in the Good condition (55%). The County System had the lowest percentage of Good condition bridges (46.7%). Bridges in Poor condition were the most common in the County System (8.3%)."
+  },
+  {
+    "objectID": "draft-results.html#bridge-traffic-vs-condition",
+    "href": "draft-results.html#bridge-traffic-vs-condition",
+    "title": "Appendix B — Draft: Results",
+    "section": "B.2 Bridge Traffic vs Condition",
+    "text": "B.2 Bridge Traffic vs Condition\n\nThe relationship between daily crossing and bridge condition was shown in this scatter plot. The data shows that bridges with higher crossing tend to be in worse condition. Poor condition bridges are seen to be associated with higher traffic volumes, while Good condition bridges tend to have lower traffic. However, the data points indicate considerate variabliity because there are some Good and Fair conditioned bridges that have high daily crossings.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
+  },
+  {
+    "objectID": "draft-results.html#frequency-of-bridge-condition-by-county",
+    "href": "draft-results.html#frequency-of-bridge-condition-by-county",
+    "title": "Appendix B — Draft: Results",
+    "section": "B.3 Frequency of Bridge Condition by County",
+    "text": "B.3 Frequency of Bridge Condition by County\n\nThis bar chart displays the frequency of bridge conditions across different NE counties. Douglas County has the highest count of Fair condition bridges, followed by Sarpy County. The distribution shows the highest frequency of Fair bridges throughout Nebraska. Douglas County also has the highest frequency of Poor condition bridges.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
+  },
+  {
+    "objectID": "draft-results.html#average-condition-by-year-build",
+    "href": "draft-results.html#average-condition-by-year-build",
+    "title": "Appendix B — Draft: Results",
+    "section": "B.4 Average Condition By Year Build",
+    "text": "B.4 Average Condition By Year Build",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
+  },
+  {
+    "objectID": "draft-results.html#risk-levels-by-county",
+    "href": "draft-results.html#risk-levels-by-county",
+    "title": "Appendix B — Draft: Results",
+    "section": "B.5 Risk Levels by County",
+    "text": "B.5 Risk Levels by County\n\nThis stacked bar chart analyzes the distribution of risk levels across counties. Douglas County has the highest count of high risk bridges, followed by Sarpy County. The distribution of moderate and low risk bridges is more evenly spread across the other counties.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
+  },
+  {
+    "objectID": "draft-results.html#implications",
+    "href": "draft-results.html#implications",
+    "title": "Appendix B — Draft: Results",
+    "section": "B.6 Implications",
+    "text": "B.6 Implications\nThese findings suggest that while there is some correlation between traffic volume and condition, other factors like age and maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions. Counties like Douglas and Sarpy currently require attention to ensure safety on their bridges.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
+  },
+  {
+    "objectID": "draft-intro-conclusions.html",
+    "href": "draft-intro-conclusions.html",
+    "title": "Appendix C — Draft: Intro/Conclusions",
+    "section": "",
+    "text": "C.1 Introduction\nAfter several bridge collapses on the East Coast in 2024, Omaha’s mayor asked for a review of our city’s infrastructure. That report focuses on the chances of a bridge colapse here and the damage it would cause.\nI used data from Nebraska’s Department of Transportation and the National Bridge Inventory to get an overview of Nebraska’s bridge conditions. The data includes how many bridges are in poor condition, how much traffic they carry, and other factors that go into whether a bridge may need repairs or not. Using this data, I can highlight specific problems like how many high traffic bridges are in poor condition in certain areas. The goal of this report is to figure out how likely a bridge collapse is - and what we can do to keep this from happening. This information is beneficial to help city officials make informed decisions and keep our bridges safe.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Draft: Intro/Conclusions</span>"
+    ]
+  },
+  {
+    "objectID": "draft-intro-conclusions.html#conclusion",
+    "href": "draft-intro-conclusions.html#conclusion",
+    "title": "Appendix C — Draft: Intro/Conclusions",
+    "section": "C.2 Conclusion",
+    "text": "C.2 Conclusion\nThis report offers a good starting point for understanding the risks of bridge failure in Omaha. However, it is important to keep in mind that the data comes from public sources. While this data is reliable, the inspection methods and how often they inspect the bridges can vary. The data also looks at bridges in all of Nebraska, so it isn’t always specific at the city level. It is also important to keep in mind a bridge collapse can’t exactly be predicted, and this report only considers the likelihood based on their conditions. It gives us a good starting point on what poses us the most risk.\nWith that being said, it is clear that bridges classified as being in “poor” condition are a real risk to the city. Especially the bridges that carry high traffic every day. It is important to take this information into consideration and be proactive about the safety of our city.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Draft: Intro/Conclusions</span>"
+    ]
+  },
+  {
+    "objectID": "draft-results.html",
+    "href": "draft-results.html",
+    "title": "Appendix B — Draft: Results",
+    "section": "",
+    "text": "B.1 Bridge Condition by System\nThis stacked bar chart displays bridge conditions across various systems in Nebraska. The State System had the highest percentage of bridges in the Good condition (70.7%). First Class Cities had the second highest percentage in the Good condition (55%). The County System had the lowest percentage of Good condition bridges (46.7%). Bridges in Poor condition were the most common in the County System (8.3%).",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
   }
 ]

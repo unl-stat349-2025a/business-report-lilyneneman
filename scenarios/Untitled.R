@@ -1,0 +1,61 @@
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+# BRIDGE CONDITION BY SYSTEM
+data <- data.frame(
+  System = c("County System", "First Class Cities", "State System", "NHS State System", 
+             "NHS Local System", "Nebraska"),
+  Good = c(46.7, 55.0, 70.7, 67.5, 29.7, 58.3),
+  Fair = c(34.7, 39.5, 26.2, 29.8, 62.5, 33.9),
+  Poor = c(8.3, 4.1, 2.9, 2.3, 4.7, 6.9),
+  Closed = c(1.5, 0.6, 0.0, 0.1, 3.1, 1.1)
+)
+
+data_long <- data %>%
+  pivot_longer(cols = Good:Closed, names_to = "Condition", values_to = "Percentage")
+
+ggplot(data_long, aes(x = System, y = Percentage, fill = Condition)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Bridge Condition by System in Nebraska", 
+       x = "Bridge System", 
+       y = "Percentage of Bridges") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_fill_manual(values = c("Good" = "lightgreen", "Fair" = "yellow", "Poor" = "red", "Closed" = "gray"))
+
+# BRIDGE TRAFFIC VS CONDITION
+bridge_data <- data.frame(
+  Bridge = c("US75 over J St", "US75 over Stream", "72nd St/FAU 5037 over UPRR", "US75 over Betz Creek", 
+             "42nd St/FAU 5057 over UPRR", "42nd St/FAU 5057 over UPRR", "SB-I180/US34 over I80", 
+             "NB-I180/US34 over I80", "N370 over Papillion Creek Trib", "US6 over Saddle Creek Rd", 
+             "N50 over I80", "N38 over Big Papillion Creek", "US275/N92 over 72nd Street", 
+             "N 14th St/FAU 5227 over Oak Creek", "14th St over US6", "WB-US30/US81 over Loup River", 
+             "US6 over Up/BNSF RR", "N31 over Park/Papio", "Bell St over UPRR", "US77 over Elm Creek", 
+             "36th St/Fas 5061 over Papillion Creek", "Hamiltn St/Fau5066 over US75", "US30 over Fremont Co Drain Ditch", 
+             "Norflk Ave/FAU6020 over N Fk Elkhorn River", "I80 over Link 17B & Rd 77"),
+  County = c("Douglas", "Sarpy", "Douglas", "Sarpy", "Douglas", "Douglas", "Lancaster", "Lancaster", 
+             "Sarpy", "Douglas", "Sarpy", "Douglas", "Douglas", "Lancaster", "Lancaster", "Platte", 
+             "Lancaster", "Douglas", "Dodge", "Dodge", "Sarpy", "Douglas", "Dodge", "Madison", "Cheyenne"),
+  Year_Built = c(1970, 1988, 1966, 1989, 1960, 1960, 1960, 1960, 1995, 1934, 1958, 1964, 1962, 1968, 1961, 
+                 1931, 1936, 1938, 1994, 1954, 1984, 1977, 1970, 1968, 1974),
+  Daily_Crossings = c(85640, 58870, 56260, 38095, 38000, 38000, 32795, 32795, 30705, 26220, 26190, 
+                      26100, 24360, 21660, 19190, 14395, 11505, 11100, 9570, 9535, 9470, 8730, 8310, 8130, 7800),
+  Condition = c("Poor", "Fair", "Fair", "Fair", "Poor", "Poor", "Good", "Good", "Fair", "Fair", "Fair", 
+                "Fair", "Fair", "Good", "Fair", "Good", "Fair", "Poor", "Good", "Fair", "Fair", "Fair", 
+                "Fair", "Good", "Fair")
+)
+
+# Map condition to numeric values
+bridge_data$Condition_Numeric <- factor(bridge_data$Condition, levels = c("Good", "Fair", "Poor"), labels = c(1, 2, 3))
+
+# Create scatter plot
+ggplot(bridge_data, aes(x = Daily_Crossings, y = Condition_Numeric, size = Daily_Crossings, color = Condition_Numeric)) +
+  geom_point(alpha = 0.7) +
+  labs(title = "Bridge Traffic vs Condition", 
+       x = "Daily Crossings", 
+       y = "Condition (1 = Good, 2 = Fair, 3 = Poor)") +
+  scale_color_manual(values = c("green", "yellow", "red")) +
+  scale_size_continuous(range = c(3, 10)) +
+  theme_minimal()
+

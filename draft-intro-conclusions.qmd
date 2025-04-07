@@ -1,3 +1,15 @@
 ---
 title: "Draft: Intro/Conclusions"
 ---
+
+## Introduction
+
+After several bridge collapses on the East Coast in 2024, Omaha's mayor asked for a review of our city's infrastructure. That report focuses on the chances of a bridge colapse here and the damage it would cause.
+
+I used data from Nebraska's Department of Transportation and the National Bridge Inventory to get an overview of Nebraska's bridge conditions. The data includes how many bridges are in poor condition, how much traffic they carry, and other factors that go into whether a bridge may need repairs or not. Using this data, I can highlight specific problems like how many high traffic bridges are in poor condition in certain areas. The goal of this report is to figure out how likely a bridge collapse is - and what we can do to keep this from happening. This information is beneficial to help city officials make informed decisions and keep our bridges safe.
+
+## Conclusion
+
+This report offers a good starting point for understanding the risks of bridge failure in Omaha. However, it is important to keep in mind that the data comes from public sources. While this data is reliable, the inspection methods and how often they inspect the bridges can vary. The data also looks at bridges in all of Nebraska, so it isn't always specific at the city level. It is also important to keep in mind a bridge collapse can't exactly be predicted, and this report only considers the likelihood based on their conditions. It gives us a good starting point on what poses us the most risk.
+
+With that being said, it is clear that bridges classified as being in "poor" condition are a real risk to the city. Especially the bridges that carry high traffic every day. It is important to take this information into consideration and be proactive about the safety of our city.
