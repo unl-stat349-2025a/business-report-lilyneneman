@@ -1,13 +1,9 @@
----
-title: "Draft: Results"
----
-
-## Bridge Condition by System
-
 ```{r}
 library(ggplot2)
 library(dplyr)
 library(tidyr)
+
+# BRIDGE CONDITION BY SYSTEM
 data <- data.frame(
   System = c("County System", "First Class Cities", "State System", "NHS State System", 
              "NHS Local System", "Nebraska"),
@@ -17,7 +13,7 @@ data <- data.frame(
   Closed = c(1.5, 0.6, 0.0, 0.1, 3.1, 1.1)
 )
 
-data_long <- data |>
+data_long <- data %>%
   pivot_longer(cols = Good:Closed, names_to = "Condition", values_to = "Percentage")
 
 ggplot(data_long, aes(x = System, y = Percentage, fill = Condition)) +
@@ -27,13 +23,8 @@ ggplot(data_long, aes(x = System, y = Percentage, fill = Condition)) +
        y = "Percentage of Bridges") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   scale_fill_manual(values = c("Good" = "lightgreen", "Fair" = "yellow", "Poor" = "red", "Closed" = "gray"))
-```
 
-This stacked bar chart displays bridge conditions across various systems in Nebraska. The State System had the highest percentage of bridges in the Good condition (70.7%). First Class Cities had the second highest percentage in the Good condition (55%). The County System had the lowest percentage of Good condition bridges (46.7%). Bridges in Poor condition were the most common in the County System (8.3%).
-
-## Bridge Traffic vs Condition
-
-```{r}
+# BRIDGE TRAFFIC VS CONDITION
 bridge_data <- data.frame(
   Bridge = c("US75 over J St", "US75 over Stream", "72nd St/FAU 5037 over UPRR", "US75 over Betz Creek", 
              "42nd St/FAU 5057 over UPRR", "42nd St/FAU 5057 over UPRR", "SB-I180/US34 over I80", 
@@ -55,6 +46,7 @@ bridge_data <- data.frame(
                 "Fair", "Good", "Fair")
 )
 
+# Map condition to numeric values
 bridge_data$Condition_Numeric <- factor(bridge_data$Condition, levels = c("Good", "Fair", "Poor"), labels = c(1, 2, 3))
 
 # Create scatter plot
@@ -64,15 +56,32 @@ ggplot(bridge_data, aes(x = Daily_Crossings, y = Condition_Numeric, size = Daily
        x = "Daily Crossings", 
        y = "Condition (1 = Good, 2 = Fair, 3 = Poor)") +
   scale_color_manual(values = c("green", "yellow", "red")) +
-  scale_size_continuous(range = c(1, 5)) +
+  scale_size_continuous(range = c(3, 10)) +
   theme_minimal()
-```
 
-The relationship between daily crossing and bridge condition was shown in this scatter plot. The data shows that bridges with higher crossing tend to be in worse condition. Poor condition bridges are seen to be associated with higher traffic volumes, while Good condition bridges tend to have lower traffic. However, the data points indicate considerate variabliity because there are some Good and Fair conditioned bridges that have high daily crossings.
 
-## Frequency of Bridge Condition by County
+#BRIDGE CONDITIONS BY AGE
 
-```{r}
+
+bridge_data$Condition <- factor(bridge_data$Condition, levels = c("Good", "Fair", "Poor"))
+bridge_data$Condition_Numeric <- as.numeric(bridge_data$Condition)
+
+# Convert Year_Built to numeric for better plotting (since it's a continuous variable)
+bridge_data$Year_Built <- as.numeric(as.character(bridge_data$Year_Built))
+
+# Create boxplot with numeric Condition
+ggplot(bridge_data, aes(x = as.factor(Year_Built), y = Condition_Numeric, fill = Condition)) +
+  geom_boxplot() +
+  labs(title = "Bridge Condition by Year Built", 
+       x = "Year Built", 
+       y = "Condition (1 = Good, 2 = Fair, 3 = Poor)") +
+  scale_fill_manual(values = c("green", "yellow", "red")) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_y_continuous(breaks = c(1, 2, 3), labels = c("Good", "Fair", "Poor"))
+
+#BAR GRAPH OF CONDITION FREQUENCY BY COUNTY
+
+
 ggplot(bridge_data, aes(x = County, fill = Condition)) +
   geom_bar(position = "dodge") +
   labs(title = "Frequency of Bridge Condition by County", 
@@ -81,15 +90,11 @@ ggplot(bridge_data, aes(x = County, fill = Condition)) +
   scale_fill_manual(values = c("green", "yellow", "red")) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-```
 
-This bar chart displays the frequency of bridge conditions across different NE counties. Douglas County has the highest count of Fair condition bridges, followed by Sarpy County. The distribution shows the highest frequency of Fair bridges throughout Nebraska. Douglas County also has the highest frequency of Poor condition bridges.
+#AVERAGE CONDITION BY YEAR BUILT AND COUNTY
 
-## Average Condition By Year Build
-
-```{r}
-average_condition <- bridge_data |>
-  group_by(Year_Built) |>
+average_condition <- bridge_data %>%
+  group_by(Year_Built) %>%
   summarise(Average_Condition = mean(Condition_Numeric))
 
 # Line plot for average condition over the years
@@ -102,29 +107,40 @@ ggplot(average_condition, aes(x = Year_Built, y = Average_Condition)) +
   scale_y_continuous(breaks = c(1, 2, 3), labels = c("Good", "Fair", "Poor")) +
   theme_minimal()
 
-```
 
-## Risk Levels by County
+#Risk Assessment: Condition vs. Daily Crossings
+ggplot(bridge_data, aes(x = Daily_Crossings, y = Condition_Numeric, color = Condition)) +
+  geom_point() +
+  labs(title = "Daily Crossings vs Bridge Condition", 
+       x = "Daily Crossings", 
+       y = "Condition (1 = Good, 2 = Fair, 3 = Poor)") +
+  scale_color_manual(values = c("green", "yellow", "red")) +
+  scale_y_continuous(breaks = c(1, 2, 3), labels = c("Good", "Fair", "Poor")) +
+  theme_minimal()
 
-```{r}
+
+
+#Risk levels based on crossing and condition
 bridge_data$Risk_Level <- with(bridge_data, ifelse(Daily_Crossings > 30000 & Condition_Numeric == 3, "High", 
                                                    ifelse(Daily_Crossings > 30000 & Condition_Numeric == 2, "Moderate", 
                                                           "Low")))
+
+# Plot risk level distribution by county
 ggplot(bridge_data, aes(x = County, fill = Risk_Level)) +
   geom_bar(position = "stack") +
   labs(title = "Bridge Risk Levels by County", 
        x = "County", 
        y = "Count of Bridges") +
-  scale_fill_manual(values = c("red", "green", "yellow")) +
+  scale_fill_manual(values = c("red", "yellow", "green")) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 model_condition <- lm(Condition_Numeric ~ Daily_Crossings, data = bridge_data)
 summary(model_condition)
 
+
+
+
+
+
 ```
 
-This stacked bar chart analyzes the distribution of risk levels across counties. Douglas County has the highest count of high risk bridges, followed by Sarpy County. The distribution of moderate and low risk bridges is more evenly spread across the other counties.
-
-## Implications
-
-These findings suggest that while there is some correlation between traffic volume and condition, other factors like age and maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions. Counties like Douglas and Sarpy currently require attention to ensure safety on their bridges.
