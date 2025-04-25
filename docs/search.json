@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Evaluation of ",
+    "title": "Evaluation of Omaha Bridges",
     "section": "",
     "text": "Preface\nYou are a data scientist for a mid-sized business, in a small group of 3-4 data scientists. You’ve been tasked with creating a report evaluating a scenario for your business. Your colleagues will also be evaluating the same scenario, and your reports will be used in aggregate to determine a consensus (or lack thereof) on the company’s action. The reports will also be used to inform downsizing that is rumored to be coming - you want to ensure your report is better than your peers so that you aren’t as easy to cut.\nYou may talk to your peers who are assigned the same scenario, but you do not want to collaborate too closely, lest you both become targets of the rumored layoffs.\n\nI’ve scaffolded this report for you to make this process easier - as we talk about different sections of a report in class and read about how to create similar sections, you will practice by writing the equivalent section of your report.\nThe basic steps for this task are as follows:\n\nIdentify the research question from the business question\nIdentify data set(s) which are (1) publicly available (you don’t have a budget to pay for private data) and (2) relevant to your task\n\n(HW Week 6) Document your data sets in draft-data-doc.qmd\n\nConduct a statistical analysis to support your answer to your research and business questions\n\nWrite a methods section for your business report corresponding to your statistical analysis\n(HW Week 9) Draft of results section of business report with relevant graphics/visual aids in draft-results.qmd\n\nWrite your report\n\n(HW Week 10) Draft of Intro/Conclusion sections in draft-intro-conclusions.qmd\n(HW Week 11) Draft of Executive summary section in draft-exec-summary.qmd\n\nRevise your report\n\n(HW Week 12 – not turned in) Revise your report\n(HW Week 13) - Rough draft of report due. Create one or more qmd files for your report (you can overwrite or delete intro.qmd and summary.qmd), include the names of each file (in order) in _quarto.yml. You should use references (edit references.bib and use pandoc citations). Make sure your report compiles and looks reasonable in both html and pdf.\nDevelop a presentation to go along with your report (Week 13). Create slides for your report using quarto.\n\nPeer revise reports\n\nPeer revise reports\n(HW Week 14) - Make edits to your report from comments received from peer review\n\nFinal report & presentation due",
     "crumbs": [
@@ -14,17 +14,7 @@
     "href": "ExecutiveSummary.html",
     "title": "1  Executive Summary",
     "section": "",
-    "text": "2 Executive Summary\nThis report was created in response to the mayor’s concern about bridge safety in Omaha, NE after several bridge collapses on the East Coast in 2024. Using data from the Nebraska Department of Transportation and the National Bridge Inventory, I looked at the current condition of bridges not only in Omaha, but across the state of Nebraska. Bridges were rated as being in poor, fair, or good condition. It was also taken into consideration if they were a high traffic bridge or not.\nAlthough it is hard to predict exactly if or when a bridge may collapse, this data shows that some bridges in the area could be a potential risk to the public if not repaired. The bridges that were inspected to be in poor condition and that carry the most traffic on a daily basis raise the most concern to our city.\nTo reduce the chances of a collapse occurring, Omaha should invest in repairs to bridges that are used more frequently. Being proactive about these issues will keep people safe and prevent a major bridge collapse in the future.Executive Summary\nThe report is organized into the following section:",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
-    ]
-  },
-  {
-    "objectID": "ExecutiveSummary.html#introduction-and-background",
-    "href": "ExecutiveSummary.html#introduction-and-background",
-    "title": "1  Executive Summary",
-    "section": "2.1 Introduction and Background",
-    "text": "2.1 Introduction and Background\nIn this section, the importance of bridge safety is outlined, focusing on the recent bridge collapses on the East Coast that raised concerns in Omaha. The introduction explains the context of the mayor’s request for an analysis of Omaha’s bridges and the need to be proactive about our safety.",
+    "text": "1.1 Introduction and Background\nThis report was created in response to the mayor’s concern about bridge safety in Omaha, NE after several bridge collapses on the East Coast in 2024. Using data from the Nebraska Department of Transportation and the National Bridge Inventory, I looked at the current condition of bridges not only in Omaha, but across the state of Nebraska. Bridges were rated as being in poor, fair, or good condition. It was also taken into consideration if they were a high traffic bridge or not.\nAlthough it is hard to predict exactly if or when a bridge may collapse, this data shows that some bridges in the area could be a potential risk to the public if not repaired. The bridges that were inspected to be in poor condition and that carry the most traffic on a daily basis raise the most concern to our city.\nTo reduce the chances of a collapse occurring, Omaha should invest in repairs to bridges that are used more frequently. Being proactive about these issues will keep people safe and prevent a major bridge collapse in the future.Executive Summary\nThe report is organized into the following section:\nIn this section, the importance of bridge safety is outlined, focusing on the recent bridge collapses on the East Coast that raised concerns in Omaha. The introduction explains the context of the mayor’s request for an analysis of Omaha’s bridges and the need to be proactive about our safety.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
     ]
@@ -33,8 +23,8 @@
     "objectID": "ExecutiveSummary.html#methods",
     "href": "ExecutiveSummary.html#methods",
     "title": "1  Executive Summary",
-    "section": "2.2 Methods",
-    "text": "2.2 Methods\nThe methods section explains the data sources used in the analysis, including the Nebraska Department of Transportation and the National Bridge Inventory. A description of the bridge rating system - poor, fair, and good - is provided. The methods section includes the consideration of traffic volume, focusing particularly on high traffic bridges as a key factor in determining which bridges are the most at risk. It also outlines the criteria for identifying the bridges that need the most attention.,",
+    "section": "1.2 Methods",
+    "text": "1.2 Methods\nThe methods section explains the data sources used in the analysis, including the Nebraska Department of Transportation and the National Bridge Inventory. A description of the bridge rating system - poor, fair, and good - is provided. The methods section includes the consideration of traffic volume, focusing particularly on high traffic bridges as a key factor in determining which bridges are the most at risk. It also outlines the criteria for identifying the bridges that need the most attention.,",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
     ]
@@ -43,8 +33,8 @@
     "objectID": "ExecutiveSummary.html#results",
     "href": "ExecutiveSummary.html#results",
     "title": "1  Executive Summary",
-    "section": "2.3 Results",
-    "text": "2.3 Results\nThis section presents the findings of my analysis, which breaks down the number of bridges in each condition category (poor, fair, good). It identifies the birdges in poor conditions also carry high daily traffic volumes. From the results, we see that while most bridges are in fair or good condition, there are many in poor condition that have high traffic volumes. This could pose a serious risk to public safety. The results section also provides visuals, such as graphs, to get a better picture of the bridge condtions.",
+    "section": "1.3 Results",
+    "text": "1.3 Results\nThis section presents the findings of my analysis, which breaks down the number of bridges in each condition category (poor, fair, good). It identifies the birdges in poor conditions also carry high daily traffic volumes. From the results, we see that while most bridges are in fair or good condition, there are many in poor condition that have high traffic volumes. This could pose a serious risk to public safety. The results section also provides visuals, such as graphs, to get a better picture of the bridge condtions.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
     ]
@@ -53,8 +43,8 @@
     "objectID": "ExecutiveSummary.html#conclusion",
     "href": "ExecutiveSummary.html#conclusion",
     "title": "1  Executive Summary",
-    "section": "2.4 Conclusion",
-    "text": "2.4 Conclusion\nThe conclusion summarizes the key findings in the analysis, highlighting the bridges in poor condition that carry the most traffic. Emphasizing that while the risk of collapse is hard to predict, the data shows that some bridges are at a higher risk due to their condition. The conclusion addresses the need for immediate action to prevent issues in the future.",
+    "section": "1.4 Conclusion",
+    "text": "1.4 Conclusion\nThe conclusion summarizes the key findings in the analysis, highlighting the bridges in poor condition that carry the most traffic. Emphasizing that while the risk of collapse is hard to predict, the data shows that some bridges are at a higher risk due to their condition. The conclusion addresses the need for immediate action to prevent issues in the future.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
     ]
@@ -64,7 +54,7 @@
     "href": "Introduction.html",
     "title": "2  Introduction",
     "section": "",
-    "text": "3 Introduction\nAfter several bridge collapses on the East Coast in 2024, Omaha’s mayor asked for a review of our city’s infrastructure. That report focuses on the chances of a bridge collapse here and the damage it would cause.\nI used data from Nebraska’s Department of Transportation and the National Bridge Inventory to get an overview of Nebraska’s bridge conditions. The data includes how many bridges are in poor condition, how much traffic they carry, and other factors that go into whether a bridge may need repairs or not. Using this data, I can highlight specific problems like how many high traffic bridges are in poor condition in certain areas. The goal of this report is to figure out how likely a bridge collapse is - and what we can do to keep this from happening. This information is beneficial to help city officials make informed decisions and keep our bridges safe.",
+    "text": "After several bridge collapses on the East Coast in 2024, Omaha’s mayor asked for a review of our city’s infrastructure. That report focuses on the chances of a bridge collapse here and the damage it would cause.\nI used data from Nebraska’s Department of Transportation and the National Bridge Inventory to get an overview of Nebraska’s bridge conditions. The data includes how many bridges are in poor condition, how much traffic they carry, and other factors that go into whether a bridge may need repairs or not. Using this data, I can highlight specific problems like how many high traffic bridges are in poor condition in certain areas. The goal of this report is to figure out how likely a bridge collapse is - and what we can do to keep this from happening. This information is beneficial to help city officials make informed decisions and keep our bridges safe.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -74,7 +64,7 @@
     "href": "Methods.html",
     "title": "3  Methods",
     "section": "",
-    "text": "4 Methods\nFor this analysis, I used data from the Nebraska Department of Transportation and the National Bridge Inventory (NBI) to look at the condition of bridges across Nebraska. The data that I collected includes details about the bridges conditions, how much traffic they carry, the year they were built, and other factors that could be crucial to determining if repair is necessary.",
+    "text": "3.1 Data Preparation\nFor this analysis, I used data from the Nebraska Department of Transportation and the National Bridge Inventory (NBI) to look at the condition of bridges across Nebraska. The data that I collected includes details about the bridges conditions, how much traffic they carry, the year they were built, and other factors that could be crucial to determining if repair is necessary.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods</span>"
     ]
@@ -83,8 +73,8 @@
     "objectID": "Methods.html#data-preparation",
     "href": "Methods.html#data-preparation",
     "title": "3  Methods",
-    "section": "4.1 Data Preparation",
-    "text": "4.1 Data Preparation\n\nBridge Condition Data: The condition of each bridge was classified into four categories: Good, Fair, Poor, and Closed. The data was then sorted by different bridge systems in Nebraska, like the County System and the State System. This was important to understanding how bridges across the entire state were doing.\nTraffic Data: The data set included information for specific bridges. Specifically it included the number of vehicles crossing each bridge daily. This gave insight to which bridges might be under more stress on a daily basis.\nRisk Level Calculation: To figure out which bridges pose the highest risk, I assigned a level to each one. Bridges in poor condition with more than 30,000 vehicles crossing each day were labeled as high risk. Bridges in poor condition with fewer that 30,000 vehicles, or bridges in fair condition with more than 30,000 vehicles, were considered moderate risk. All other bridges were considered low risk.",
+    "section": "",
+    "text": "Bridge Condition Data: The condition of each bridge was classified into four categories: Good, Fair, Poor, and Closed. The data was then sorted by different bridge systems in Nebraska, like the County System and the State System. This was important to understanding how bridges across the entire state were doing.\nTraffic Data: The data set included information for specific bridges. Specifically it included the number of vehicles crossing each bridge daily. This gave insight to which bridges might be under more stress on a daily basis.\nRisk Level Calculation: To figure out which bridges pose the highest risk, I assigned a level to each one. Bridges in poor condition with more than 30,000 vehicles crossing each day were labeled as high risk. Bridges in poor condition with fewer that 30,000 vehicles, or bridges in fair condition with more than 30,000 vehicles, were considered moderate risk. All other bridges were considered low risk.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods</span>"
     ]
@@ -93,8 +83,8 @@
     "objectID": "Methods.html#statistical-analysis",
     "href": "Methods.html#statistical-analysis",
     "title": "3  Methods",
-    "section": "4.2 Statistical Analysis",
-    "text": "4.2 Statistical Analysis\n\nVisual Analysis: I created multiple charts and graphs to help better visualize the data. These included bar charts and scatter plots which displayed how traffic volume and bridge condition. These charts helped to identify trends and any unusual data points.\nANOVA: To identify if the age of a bridge (how long since it has been built) affects its condition, I used an Analysis of Variance test. This test determined if there is a significant difference in the condition of bridge levels based on when they were built.\nRisk Level Distribution: I created a stacked bar chart to visualize how the risk levels were distributed across counties in Nebraska to determine which counties had the most high-risk bridges.\n\nThe methods applied gave a comprehensive overview of the current state of many Nebraska bridges, focusing on identifying the infrastructure at the highest risk. By combining visualizations and statistical tests, the analysis aims to provide insights for decision-makers regarding bridge safety in Omaha.",
+    "section": "3.2 Statistical Analysis",
+    "text": "3.2 Statistical Analysis\n\nVisual Analysis: I created multiple charts and graphs to help better visualize the data. These included bar charts and scatter plots which displayed how traffic volume and bridge condition. These charts helped to identify trends and any unusual data points.\nANOVA: To identify if the age of a bridge (how long since it has been built) affects its condition, I used an Analysis of Variance test. This test determined if there is a significant difference in the condition of bridge levels based on when they were built.\nRisk Level Distribution: I created a stacked bar chart to visualize how the risk levels were distributed across counties in Nebraska to determine which counties had the most high-risk bridges.\n\nThe methods applied gave a comprehensive overview of the current state of many Nebraska bridges, focusing on identifying the infrastructure at the highest risk. By combining visualizations and statistical tests, the analysis aims to provide insights for decision-makers regarding bridge safety in Omaha.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods</span>"
     ]
@@ -104,17 +94,7 @@
     "href": "Results.html",
     "title": "4  Results",
     "section": "",
-    "text": "5 Results",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
-    ]
-  },
-  {
-    "objectID": "Results.html#bridge-condition-by-system",
-    "href": "Results.html#bridge-condition-by-system",
-    "title": "4  Results",
-    "section": "5.1 Bridge Condition by System",
-    "text": "5.1 Bridge Condition by System\n\n\n\n\n\n\n\n\n\nThis stacked bar chart displays bridge conditions across various systems in Nebraska. The State System had the highest percentage of bridges in the Good condition (70.7%). First Class Cities had the second highest percentage in the Good condition (55%). The County System had the lowest percentage of Good condition bridges (46.7%). Bridges in Poor condition were the most common in the County System (8.3%). These results suggest that County System Bridges are facing the most infrastructure challenges.",
+    "text": "4.1 Bridge Condition by System\nThis stacked bar chart displays bridge conditions across various systems in Nebraska. The State System had the highest percentage of bridges in the Good condition (70.7%). First Class Cities had the second highest percentage in the Good condition (55%). The County System had the lowest percentage of Good condition bridges (46.7%). Bridges in Poor condition were the most common in the County System (8.3%). These results suggest that County System Bridges are facing the most infrastructure challenges.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
     ]
@@ -123,8 +103,8 @@
     "objectID": "Results.html#bridge-traffic-vs-condition",
     "href": "Results.html#bridge-traffic-vs-condition",
     "title": "4  Results",
-    "section": "5.2 Bridge Traffic vs Condition",
-    "text": "5.2 Bridge Traffic vs Condition\n\n\n\n\n\n\n\n\n\nThe relationship between daily crossing and bridge condition was shown in this scatter plot. The data shows that bridges with higher crossing tend to be in worse condition. Poor condition bridges are seen to be associated with higher traffic volumes (US75 over J St with 85,640 daily crossings), while Good condition bridges tend to have lower traffic. However, the data points indicate considerate variablity because there are some Good and Fair conditioned bridges that have high daily crossings.",
+    "section": "4.2 Bridge Traffic vs Condition",
+    "text": "4.2 Bridge Traffic vs Condition\n\n\n\n\n\n\n\n\n\nThe relationship between daily crossing and bridge condition was shown in this scatter plot. The data shows that bridges with higher crossing tend to be in worse condition. Poor condition bridges are seen to be associated with higher traffic volumes (US75 over J St with 85,640 daily crossings), while Good condition bridges tend to have lower traffic. However, the data points indicate considerate variablity because there are some Good and Fair conditioned bridges that have high daily crossings.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
     ]
@@ -133,8 +113,8 @@
     "objectID": "Results.html#frequency-of-bridge-condition-by-county",
     "href": "Results.html#frequency-of-bridge-condition-by-county",
     "title": "4  Results",
-    "section": "5.3 Frequency of Bridge Condition by County",
-    "text": "5.3 Frequency of Bridge Condition by County\n\n\n\n\n\n\n\n\n\nThis bar chart displays the frequency of bridge conditions across different NE counties. Douglas County has the highest count of Fair condition bridges, followed by Sarpy County. The distribution shows the highest frequency of Fair bridges throughout Nebraska. Douglas County also has the highest frequency of Poor condition bridges.",
+    "section": "4.3 Frequency of Bridge Condition by County",
+    "text": "4.3 Frequency of Bridge Condition by County\n\n\n\n\n\n\n\n\n\nThis bar chart displays the frequency of bridge conditions across different NE counties. Douglas County has the highest count of Fair condition bridges, followed by Sarpy County. The distribution shows the highest frequency of Fair bridges throughout Nebraska. Douglas County also has the highest frequency of Poor condition bridges.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
     ]
@@ -143,8 +123,8 @@
     "objectID": "Results.html#average-condition-by-year-build",
     "href": "Results.html#average-condition-by-year-build",
     "title": "4  Results",
-    "section": "5.4 Average Condition By Year Build",
-    "text": "5.4 Average Condition By Year Build\n\n\n[1] \"numeric\"\n\n\n            Df Sum Sq Mean Sq F value Pr(&gt;F)\nYear_Built   1  0.073  0.0727   0.171  0.683\nResiduals   23  9.767  0.4247               \n\n\nAn ANOVA was conducted to determine whether the year a bridge was built had a significant effect on it’s condition rating. The results indicated that their was no significant difference in condition based on year built, (F = 0.171, p = 0.683). This suggests that the age of a bridge alone does not predict its current condition and that it is important to consider other factors that may effect bridge condition.",
+    "section": "4.4 Average Condition By Year Build",
+    "text": "4.4 Average Condition By Year Build\n\n\n[1] \"numeric\"\n\n\n            Df Sum Sq Mean Sq F value Pr(&gt;F)\nYear_Built   1  0.073  0.0727   0.171  0.683\nResiduals   23  9.767  0.4247               \n\n\nAn ANOVA was conducted to determine whether the year a bridge was built had a significant effect on it’s condition rating. The results indicated that their was no significant difference in condition based on year built, (F = 0.171, p = 0.683). This suggests that the age of a bridge alone does not predict its current condition and that it is important to consider other factors that may effect bridge condition.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
     ]
@@ -153,8 +133,8 @@
     "objectID": "Results.html#risk-level-assessment",
     "href": "Results.html#risk-level-assessment",
     "title": "4  Results",
-    "section": "5.5 Risk Level Assessment",
-    "text": "5.5 Risk Level Assessment\n\n\n\n\n\n\n\n\n\nThis stacked bar chart analyzes the distribution of risk levels across Nebraska counties. Douglas County has the highest count of high-risk bridges, followed by Sarpy County. The majority of low-risk bridges are spread more evenly across counties. These results reinforce the need for targeted maintenance efforts in high-traffic Omaha areas.",
+    "section": "4.5 Risk Level Assessment",
+    "text": "4.5 Risk Level Assessment\n\n\n\n\n\n\n\n\n\nThis stacked bar chart analyzes the distribution of risk levels across Nebraska counties. Douglas County has the highest count of high-risk bridges, followed by Sarpy County. The majority of low-risk bridges are spread more evenly across counties. These results reinforce the need for targeted maintenance efforts in high-traffic Omaha areas.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
     ]
@@ -163,8 +143,8 @@
     "objectID": "Results.html#implications",
     "href": "Results.html#implications",
     "title": "4  Results",
-    "section": "5.6 Implications",
-    "text": "5.6 Implications\nThese findings suggest that while there is some correlation between traffic volume and condition, other factors like age and maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions. Counties like Douglas and Sarpy currently require attention to ensure safety on their bridges.",
+    "section": "4.6 Implications",
+    "text": "4.6 Implications\nThese findings suggest that while there is some correlation between traffic volume and condition, other factors like age and maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions. Counties like Douglas and Sarpy currently require attention to ensure safety on their bridges.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
     ]
@@ -174,7 +154,7 @@
     "href": "Conclusion.html",
     "title": "5  Conclusion",
     "section": "",
-    "text": "6 Conclusion\nThis report offers a good starting point for understanding the risks of bridge failure in Omaha. However, it is important to keep in mind that the data comes from public sources. While this data is reliable, the inspection methods and how often they inspect the bridges can vary. The data also looks at bridges in all of Nebraska, so it isn’t always specific at the city level. It is also important to keep in mind a bridge collapse can’t exactly be predicted, and this report only considers the likelihood based on their conditions. It gives us a good starting point on what poses us the most risk.\nThe analysis reveals that bridges classified as being in “poor” condition are a significant risk to the city, especially those that carry high traffic volumes. Bridges like US75 over J St, which carry more than 85,000 daily crossings, are an example of a high-risk structure that requires attention. The data indicated that the County System, particularly in areas like Douglas and Sarpy Counties, face the most threat, with higher percentage of poor-condition bridges and high traffic.\nWith that being said, it is clear that focusing on bridges in poor condition, especially those with heavy daily traffic, is critical for reducing risk to our city. These bridges should be prioritized for repairs and improvements. Additionally, while the year a bridge was built does not appear to significantly affect its current condition, ongoing maintenance is crucial for preventing problems in the future.\nIn conclusion, it is essential to be proactive with this information for the safety of Omaha. Using this data Omaha can reduce the likelihood of bridge failures and ensure continued safety.",
+    "text": "This report offers a good starting point for understanding the risks of bridge failure in Omaha. However, it is important to keep in mind that the data comes from public sources. While this data is reliable, the inspection methods and how often they inspect the bridges can vary. The data also looks at bridges in all of Nebraska, so it isn’t always specific at the city level. It is also important to keep in mind a bridge collapse can’t exactly be predicted, and this report only considers the likelihood based on their conditions. It gives us a good starting point on what poses us the most risk.\nThe analysis reveals that bridges classified as being in “poor” condition are a significant risk to the city, especially those that carry high traffic volumes. Bridges like US75 over J St, which carry more than 85,000 daily crossings, are an example of a high-risk structure that requires attention. The data indicated that the County System, particularly in areas like Douglas and Sarpy Counties, face the most threat, with higher percentage of poor-condition bridges and high traffic.\nWith that being said, it is clear that focusing on bridges in poor condition, especially those with heavy daily traffic, is critical for reducing risk to our city. These bridges should be prioritized for repairs and improvements. Additionally, while the year a bridge was built does not appear to significantly affect its current condition, ongoing maintenance is crucial for preventing problems in the future.\nIn conclusion, it is essential to be proactive with this information for the safety of Omaha. Using this data Omaha can reduce the likelihood of bridge failures and ensure continued safety.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Conclusion</span>"
     ]
@@ -305,7 +285,18 @@
     "href": "draft-exec-summary.html",
     "title": "Appendix D — Draft: Executive Summary",
     "section": "",
-    "text": "&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD ## Executive Summary\nThis report was created in response to the mayor’s concern about bridge safety in Omaha, NE after several bridge collapses on the East Coast in 2024. Using data from the Nebraska Department of Transportation and the National Bridge Inventory, I looked at the current condition of bridges not only in Omaha, but across the state of Nebraska. Bridges were rated as being in poor, fair, or good condition. It was also taken into consideration if they were a high traffic bridge or not.\nAlthough it is hard to predict exactly if or when a bridge may collapse, this data shows that some bridges in the area could be a potential risk to the public if not repaired. The bridges that were inspected to be in poor condition and that carry the most traffic on a daily basis raise the most concern to our city.\nTo reduce the chances of a collapse occurring, Omaha should invest in repairs to bridges that are used more frequently. Being proactive about these issues will keep people safe and prevent a major bridge collapse in the future.Executive Summary\nThe report is organized into the following section:\n\nD.0.1 Introduction and Background\nIn this section, the importance of bridge safety is outlined, focusing on the recent bridge collapses on the East Coast that raised concerns in Omaha. The introduction explains the context of the mayor’s request for an analysis of Omaha’s bridges and the need to be proactive about our safety.\n\n\nD.0.2 Methods\nThe methods section explains the data sources used in the analysis, including the Nebraska Department of Transportation and the National Bridge Inventory. A description of the bridge rating system - poor, fair, and good - is provided. The methods section includes the consideration of traffic volume, focusing particularly on high traffic bridges as a key factor in determining which bridges are the most at risk. It also outlines the criteria for identifying the bridges that need the most attention.,\n\n\nD.0.3 Results\nThis section presents the findings of my analysis, which breaks down the number of bridges in each condition category (poor, fair, good). It identifies the birdges in poor conditions also carry high daily traffic volumes. From the results, we see that while most bridges are in fair or good condition, there are many in poor condition that have high traffic volumes. This could pose a serious risk to public safety. The results section also provides visuals, such as graphs, to get a better picture of the bridge condtions.\n\n\nD.0.4 Conclusion\n\n\nE The conclusion summarizes the key findings in the analysis, highlighting the bridges in poor condition that carry the most traffic. Emphasizing that while the risk of collapse is hard to predict, the data shows that some bridges are at a higher risk due to their condition. The conclusion addresses the need for immediate action to prevent issues in the future.\nExecutive Summary This report was created in response to the mayor’s concern about bridge safety in Omaha, NE after several bridge collapses on the East Coast in 2024. Using data from the Nebraska Department of Transportation and the National Bridge Inventory, I looked at the current condition of bridges not only in Omaha, but across the state of Nebraska. Bridges were rated as being in poor, fair, or good condition. It was also taken into consideration if they were a high traffic bridge or not.\nAlthough it is hard to predict exactly if or when a bridge may collapse, this data shows that some bridges in the area could be a potential risk to the public if not repaired. The bridges that were inspected to be in poor condition and that carry the most traffic on a daily basis raise the most concern to our city.\nTo reduce the chances of a collapse occurring, Omaha should invest in repairs to bridges that are used more frequently. Being proactive about these issues will keep people safe and prevent a major bridge collapse in the future.\n\n\n\n\n\n\n\nb68d76d411fbd2c47292bcd58c38d2e6c9d57f22",
+    "text": "D.1 Executive Summary\nThis report was created in response to the mayor’s concern about bridge safety in Omaha, NE after several bridge collapses on the East Coast in 2024. Using data from the Nebraska Department of Transportation and the National Bridge Inventory, I looked at the current condition of bridges not only in Omaha, but across the state of Nebraska. Bridges were rated as being in poor, fair, or good condition. It was also taken into consideration if they were a high traffic bridge or not.\nAlthough it is hard to predict exactly if or when a bridge may collapse, this data shows that some bridges in the area could be a potential risk to the public if not repaired. The bridges that were inspected to be in poor condition and that carry the most traffic on a daily basis raise the most concern to our city.\nTo reduce the chances of a collapse occurring, Omaha should invest in repairs to bridges that are used more frequently. Being proactive about these issues will keep people safe and prevent a major bridge collapse in the future.Executive Summary\nThe report is organized into the following section:",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Draft: Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "draft-exec-summary.html#executive-summary",
+    "href": "draft-exec-summary.html#executive-summary",
+    "title": "Appendix D — Draft: Executive Summary",
+    "section": "",
+    "text": "D.1.1 Introduction and Background\nIn this section, the importance of bridge safety is outlined, focusing on the recent bridge collapses on the East Coast that raised concerns in Omaha. The introduction explains the context of the mayor’s request for an analysis of Omaha’s bridges and the need to be proactive about our safety.\n\n\nD.1.2 Methods\nThe methods section explains the data sources used in the analysis, including the Nebraska Department of Transportation and the National Bridge Inventory. A description of the bridge rating system - poor, fair, and good - is provided. The methods section includes the consideration of traffic volume, focusing particularly on high traffic bridges as a key factor in determining which bridges are the most at risk. It also outlines the criteria for identifying the bridges that need the most attention.,\n\n\nD.1.3 Results\nThis section presents the findings of my analysis, which breaks down the number of bridges in each condition category (poor, fair, good). It identifies the birdges in poor conditions also carry high daily traffic volumes. From the results, we see that while most bridges are in fair or good condition, there are many in poor condition that have high traffic volumes. This could pose a serious risk to public safety. The results section also provides visuals, such as graphs, to get a better picture of the bridge condtions.\n\n\nD.1.4 Conclusion\nThe conclusion summarizes the key findings in the analysis, highlighting the bridges in poor condition that carry the most traffic. Emphasizing that while the risk of collapse is hard to predict, the data shows that some bridges are at a higher risk due to their condition. The conclusion addresses the need for immediate action to prevent issues in the future.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>D</span>  <span class='chapter-title'>Draft: Executive Summary</span>"

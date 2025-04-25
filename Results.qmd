@@ -3,8 +3,6 @@ title: "Results"
 editor: visual
 ---
 
-# Results
-
 ## Bridge Condition by System
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}

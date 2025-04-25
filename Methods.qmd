@@ -3,8 +3,6 @@ title: "Methods"
 editor: visual
 ---
 
-# Methods
-
 For this analysis, I used data from the Nebraska Department of Transportation and the National Bridge Inventory (NBI) to look at the condition of bridges across Nebraska. The data that I collected includes details about the bridges conditions, how much traffic they carry, the year they were built, and other factors that could be crucial to determining if repair is necessary.
 
 ## Data Preparation

@@ -3,8 +3,6 @@ title: "Conclusion"
 editor: visual
 ---
 
-# Conclusion
-
 This report offers a good starting point for understanding the risks of bridge failure in Omaha. However, it is important to keep in mind that the data comes from public sources. While this data is reliable, the inspection methods and how often they inspect the bridges can vary. The data also looks at bridges in all of Nebraska, so it isn't always specific at the city level. It is also important to keep in mind a bridge collapse can't exactly be predicted, and this report only considers the likelihood based on their conditions. It gives us a good starting point on what poses us the most risk.
 
 The analysis reveals that bridges classified as being in "poor" condition are a significant risk to the city, especially those that carry high traffic volumes. Bridges like US75 over J St, which carry more than 85,000 daily crossings, are an example of a high-risk structure that requires attention. The data indicated that the County System, particularly in areas like Douglas and Sarpy Counties, face the most threat, with higher percentage of poor-condition bridges and high traffic.
