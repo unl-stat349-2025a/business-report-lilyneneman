@@ -5,6 +5,6 @@ editor: visual
 
 # Introduction
 
-After several bridge collapses on the East Coast in 2024, Omaha's mayor asked for a review of our city's infrastructure. That report focuses on the chances of a bridge colapse here and the damage it would cause.
+After several bridge collapses on the East Coast in 2024, Omaha's mayor asked for a review of our city's infrastructure. That report focuses on the chances of a bridge collapse here and the damage it would cause.
 
 I used data from Nebraska's Department of Transportation and the National Bridge Inventory to get an overview of Nebraska's bridge conditions. The data includes how many bridges are in poor condition, how much traffic they carry, and other factors that go into whether a bridge may need repairs or not. Using this data, I can highlight specific problems like how many high traffic bridges are in poor condition in certain areas. The goal of this report is to figure out how likely a bridge collapse is - and what we can do to keep this from happening. This information is beneficial to help city officials make informed decisions and keep our bridges safe.

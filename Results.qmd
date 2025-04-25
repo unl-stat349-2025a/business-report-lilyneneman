@@ -7,7 +7,7 @@ editor: visual
 
 ## Bridge Condition by System
 
-```{r}
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(ggplot2)
 library(dplyr)
 library(tidyr)
@@ -38,7 +38,7 @@ This stacked bar chart displays bridge conditions across various systems in Nebr
 
 ## Bridge Traffic vs Condition
 
-```{r}
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(ggplot2)
 library(dplyr)
 library(tidyr)
@@ -80,7 +80,7 @@ The relationship between daily crossing and bridge condition was shown in this s
 
 ## Frequency of Bridge Condition by County
 
-```{r}
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(ggplot2)
 library(dplyr)
 library(tidyr)
@@ -98,7 +98,7 @@ This bar chart displays the frequency of bridge conditions across different NE c
 
 ## Average Condition By Year Build
 
-```{r}
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 bridge_data$Year_Built <- factor(bridge_data$Year_Built)
 bridge_data$Year_Built <- droplevels(bridge_data$Year_Built)
 bridge_data$Year_Built <- as.numeric(as.character(bridge_data$Year_Built))
@@ -115,7 +115,7 @@ An ANOVA was conducted to determine whether the year a bridge was built had a si
 
 ## Risk Level Assessment
 
-```{r}
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 bridge_data <- bridge_data %>%
   mutate(Risk_Level = case_when(
     Condition == "Poor" & Daily_Crossings > 30000 ~ "High",
