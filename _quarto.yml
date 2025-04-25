@@ -9,8 +9,11 @@ book:
     left: "Copyright 2025, Author Name"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
+    - ExecutiveSummary.qmd
+    - Introduction.qmd
+    - Methods.qmd
+    - Results.qmd
+    - Conclusion.qmd
     - references.qmd
   appendices:
     - draft-data-doc.qmd

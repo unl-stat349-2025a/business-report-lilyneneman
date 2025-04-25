@@ -1,5 +1,6 @@
 ---
-title: "Draft: Results"
+title: "Results"
+editor: visual
 ---
 
 # Results
@@ -31,7 +32,6 @@ ggplot(data_long, aes(x = System, y = Percentage, fill = Condition)) +
   scale_fill_manual(values = c("Good" = "lightgreen", "Fair" = "yellow", "Poor" = "red", "Closed" = "gray"))
 
 library(dplyr)
-
 ```
 
 This stacked bar chart displays bridge conditions across various systems in Nebraska. The State System had the highest percentage of bridges in the Good condition (70.7%). First Class Cities had the second highest percentage in the Good condition (55%). The County System had the lowest percentage of Good condition bridges (46.7%). Bridges in Poor condition were the most common in the County System (8.3%). These results suggest that County System Bridges are facing the most infrastructure challenges.
@@ -66,7 +66,6 @@ bridge_data <- data.frame(
 
 bridge_data$Condition_Numeric <- factor(bridge_data$Condition, levels = c("Good", "Fair", "Poor"), labels = c(1, 2, 3))
 
-# Create scatter plot
 ggplot(bridge_data, aes(x = Daily_Crossings, y = Condition_Numeric, size = Daily_Crossings, color = Condition_Numeric)) +
   geom_point(alpha = 0.7) +
   labs(title = "Bridge Traffic vs Condition", 
@@ -93,7 +92,6 @@ ggplot(bridge_data, aes(x = County, fill = Condition)) +
        y = "Count of Bridges") +
   scale_fill_manual(values = c("green", "yellow", "red")) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
 ```
 
 This bar chart displays the frequency of bridge conditions across different NE counties. Douglas County has the highest count of Fair condition bridges, followed by Sarpy County. The distribution shows the highest frequency of Fair bridges throughout Nebraska. Douglas County also has the highest frequency of Poor condition bridges.
@@ -111,14 +109,13 @@ class(bridge_data$Year_Built)
 
 anova_result <- aov(Condition_Numeric ~ Year_Built, data = bridge_data)
 summary(anova_result)
-
-
 ```
 
 An ANOVA was conducted to determine whether the year a bridge was built had a significant effect on it's condition rating. The results indicated that their was no significant difference in condition based on year built, (F = 0.171, p = 0.683). This suggests that the age of a bridge alone does not predict its current condition and that it is important to consider other factors that may effect bridge condition.
 
+## Risk Level Assessment
+
 ```{r}
-# Create a risk level column based on condition and traffic
 bridge_data <- bridge_data %>%
   mutate(Risk_Level = case_when(
     Condition == "Poor" & Daily_Crossings > 30000 ~ "High",
@@ -127,7 +124,6 @@ bridge_data <- bridge_data %>%
     TRUE ~ "Low"
   ))
 
-# Bar plot showing risk levels by county
 ggplot(bridge_data, aes(x = County, fill = Risk_Level)) +
   geom_bar(position = "stack") +
   labs(title = "Bridge Risk Levels by County",
@@ -135,6 +131,7 @@ ggplot(bridge_data, aes(x = County, fill = Risk_Level)) +
        y = "Number of Bridges") +
   scale_fill_manual(values = c("High" = "red", "Moderate" = "yellow", "Low" = "green")) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
 ```
 
 This stacked bar chart analyzes the distribution of risk levels across Nebraska counties. Douglas County has the highest count of high-risk bridges, followed by Sarpy County. The majority of low-risk bridges are spread more evenly across counties. These results reinforce the need for targeted maintenance efforts in high-traffic Omaha areas.

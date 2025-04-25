@@ -1,0 +1,22 @@
+---
+title: "Methods"
+editor: visual
+---
+
+# Methods
+
+For this analysis, I used data from the Nebraska Department of Transportation and the National Bridge Inventory (NBI) to look at the condition of bridges across Nebraska. The data that I collected includes details about the bridges conditions, how much traffic they carry, the year they were built, and other factors that could be crucial to determining if repair is necessary.
+
+## Data Preparation
+
+1.  Bridge Condition Data: The condition of each bridge was classified into four categories: Good, Fair, Poor, and Closed. The data was then sorted by different bridge systems in Nebraska, like the County System and the State System. This was important to understanding how bridges across the entire state were doing.
+2.  Traffic Data: The data set included information for specific bridges. Specifically it included the number of vehicles crossing each bridge daily. This gave insight to which bridges might be under more stress on a daily basis.
+3.  Risk Level Calculation: To figure out which bridges pose the highest risk, I assigned a level to each one. Bridges in poor condition with more than 30,000 vehicles crossing each day were labeled as high risk. Bridges in poor condition with fewer that 30,000 vehicles, or bridges in fair condition with more than 30,000 vehicles, were considered moderate risk. All other bridges were considered low risk.
+
+## Statistical Analysis
+
+1.  Visual Analysis: I created multiple charts and graphs to help better visualize the data. These included bar charts and scatter plots which displayed how traffic volume and bridge condition. These charts helped to identify trends and any unusual data points.
+2.  ANOVA: To identify if the age of a bridge (how long since it has been built) affects its condition, I used an Analysis of Variance test. This test determined if there is a significant difference in the condition of bridge levels based on when they were built.
+3.  Risk Level Distribution: I created a stacked bar chart to visualize how the risk levels were distributed across counties in Nebraska to determine which counties had the most high-risk bridges.
+
+The methods applied gave a comprehensive overview of the current state of many Nebraska bridges, focusing on identifying the infrastructure at the highest risk. By combining visualizations and statistical tests, the analysis aims to provide insights for decision-makers regarding bridge safety in Omaha.

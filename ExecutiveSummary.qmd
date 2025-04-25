@@ -1,8 +1,9 @@
 ---
-title: "Draft: Executive Summary"
+title: "Executive Summary"
+editor: visual
 ---
 
-## Executive Summary
+# Executive Summary
 
 This report was created in response to the mayor's concern about bridge safety in Omaha, NE after several bridge collapses on the East Coast in 2024. Using data from the Nebraska Department of Transportation and the National Bridge Inventory, I looked at the current condition of bridges not only in Omaha, but across the state of Nebraska. Bridges were rated as being in poor, fair, or good condition. It was also taken into consideration if they were a high traffic bridge or not.
 
@@ -12,18 +13,18 @@ To reduce the chances of a collapse occurring, Omaha should invest in repairs to
 
 The report is organized into the following section:
 
-### Introduction and Background
+## Introduction and Background
 
 In this section, the importance of bridge safety is outlined, focusing on the recent bridge collapses on the East Coast that raised concerns in Omaha. The introduction explains the context of the mayor's request for an analysis of Omaha's bridges and the need to be proactive about our safety.
 
-### Methods
+## Methods
 
 The methods section explains the data sources used in the analysis, including the Nebraska Department of Transportation and the National Bridge Inventory. A description of the bridge rating system - poor, fair, and good - is provided. The methods section includes the consideration of traffic volume, focusing particularly on high traffic bridges as a key factor in determining which bridges are the most at risk. It also outlines the criteria for identifying the bridges that need the most attention.,
 
-### Results
+## Results
 
 This section presents the findings of my analysis, which breaks down the number of bridges in each condition category (poor, fair, good). It identifies the birdges in poor conditions also carry high daily traffic volumes. From the results, we see that while most bridges are in fair or good condition, there are many in poor condition that have high traffic volumes. This could pose a serious risk to public safety. The results section also provides visuals, such as graphs, to get a better picture of the bridge condtions.
 
-### Conclusion
+## Conclusion
 
 The conclusion summarizes the key findings in the analysis, highlighting the bridges in poor condition that carry the most traffic. Emphasizing that while the risk of collapse is hard to predict, the data shows that some bridges are at a higher risk due to their condition. The conclusion addresses the need for immediate action to prevent issues in the future.

@@ -1,59 +1,245 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Evaluation of ",
+    "section": "",
+    "text": "Preface\nYou are a data scientist for a mid-sized business, in a small group of 3-4 data scientists. You’ve been tasked with creating a report evaluating a scenario for your business. Your colleagues will also be evaluating the same scenario, and your reports will be used in aggregate to determine a consensus (or lack thereof) on the company’s action. The reports will also be used to inform downsizing that is rumored to be coming - you want to ensure your report is better than your peers so that you aren’t as easy to cut.\nYou may talk to your peers who are assigned the same scenario, but you do not want to collaborate too closely, lest you both become targets of the rumored layoffs.\n\nI’ve scaffolded this report for you to make this process easier - as we talk about different sections of a report in class and read about how to create similar sections, you will practice by writing the equivalent section of your report.\nThe basic steps for this task are as follows:\n\nIdentify the research question from the business question\nIdentify data set(s) which are (1) publicly available (you don’t have a budget to pay for private data) and (2) relevant to your task\n\n(HW Week 6) Document your data sets in draft-data-doc.qmd\n\nConduct a statistical analysis to support your answer to your research and business questions\n\nWrite a methods section for your business report corresponding to your statistical analysis\n(HW Week 9) Draft of results section of business report with relevant graphics/visual aids in draft-results.qmd\n\nWrite your report\n\n(HW Week 10) Draft of Intro/Conclusion sections in draft-intro-conclusions.qmd\n(HW Week 11) Draft of Executive summary section in draft-exec-summary.qmd\n\nRevise your report\n\n(HW Week 12 – not turned in) Revise your report\n(HW Week 13) - Rough draft of report due. Create one or more qmd files for your report (you can overwrite or delete intro.qmd and summary.qmd), include the names of each file (in order) in _quarto.yml. You should use references (edit references.bib and use pandoc citations). Make sure your report compiles and looks reasonable in both html and pdf.\nDevelop a presentation to go along with your report (Week 13). Create slides for your report using quarto.\n\nPeer revise reports\n\nPeer revise reports\n(HW Week 14) - Make edits to your report from comments received from peer review\n\nFinal report & presentation due",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "ExecutiveSummary.html",
+    "href": "ExecutiveSummary.html",
+    "title": "1  Executive Summary",
+    "section": "",
+    "text": "2 Executive Summary\nThis report was created in response to the mayor’s concern about bridge safety in Omaha, NE after several bridge collapses on the East Coast in 2024. Using data from the Nebraska Department of Transportation and the National Bridge Inventory, I looked at the current condition of bridges not only in Omaha, but across the state of Nebraska. Bridges were rated as being in poor, fair, or good condition. It was also taken into consideration if they were a high traffic bridge or not.\nAlthough it is hard to predict exactly if or when a bridge may collapse, this data shows that some bridges in the area could be a potential risk to the public if not repaired. The bridges that were inspected to be in poor condition and that carry the most traffic on a daily basis raise the most concern to our city.\nTo reduce the chances of a collapse occurring, Omaha should invest in repairs to bridges that are used more frequently. Being proactive about these issues will keep people safe and prevent a major bridge collapse in the future.Executive Summary\nThe report is organized into the following section:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "ExecutiveSummary.html#introduction-and-background",
+    "href": "ExecutiveSummary.html#introduction-and-background",
+    "title": "1  Executive Summary",
+    "section": "2.1 Introduction and Background",
+    "text": "2.1 Introduction and Background\nIn this section, the importance of bridge safety is outlined, focusing on the recent bridge collapses on the East Coast that raised concerns in Omaha. The introduction explains the context of the mayor’s request for an analysis of Omaha’s bridges and the need to be proactive about our safety.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "ExecutiveSummary.html#methods",
+    "href": "ExecutiveSummary.html#methods",
+    "title": "1  Executive Summary",
+    "section": "2.2 Methods",
+    "text": "2.2 Methods\nThe methods section explains the data sources used in the analysis, including the Nebraska Department of Transportation and the National Bridge Inventory. A description of the bridge rating system - poor, fair, and good - is provided. The methods section includes the consideration of traffic volume, focusing particularly on high traffic bridges as a key factor in determining which bridges are the most at risk. It also outlines the criteria for identifying the bridges that need the most attention.,",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "ExecutiveSummary.html#results",
+    "href": "ExecutiveSummary.html#results",
+    "title": "1  Executive Summary",
+    "section": "2.3 Results",
+    "text": "2.3 Results\nThis section presents the findings of my analysis, which breaks down the number of bridges in each condition category (poor, fair, good). It identifies the birdges in poor conditions also carry high daily traffic volumes. From the results, we see that while most bridges are in fair or good condition, there are many in poor condition that have high traffic volumes. This could pose a serious risk to public safety. The results section also provides visuals, such as graphs, to get a better picture of the bridge condtions.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "ExecutiveSummary.html#conclusion",
+    "href": "ExecutiveSummary.html#conclusion",
+    "title": "1  Executive Summary",
+    "section": "2.4 Conclusion",
+    "text": "2.4 Conclusion\nThe conclusion summarizes the key findings in the analysis, highlighting the bridges in poor condition that carry the most traffic. Emphasizing that while the risk of collapse is hard to predict, the data shows that some bridges are at a higher risk due to their condition. The conclusion addresses the need for immediate action to prevent issues in the future.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "Introduction.html",
+    "href": "Introduction.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "3 Introduction\nAfter several bridge collapses on the East Coast in 2024, Omaha’s mayor asked for a review of our city’s infrastructure. That report focuses on the chances of a bridge colapse here and the damage it would cause.\nI used data from Nebraska’s Department of Transportation and the National Bridge Inventory to get an overview of Nebraska’s bridge conditions. The data includes how many bridges are in poor condition, how much traffic they carry, and other factors that go into whether a bridge may need repairs or not. Using this data, I can highlight specific problems like how many high traffic bridges are in poor condition in certain areas. The goal of this report is to figure out how likely a bridge collapse is - and what we can do to keep this from happening. This information is beneficial to help city officials make informed decisions and keep our bridges safe.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "Methods.html",
+    "href": "Methods.html",
+    "title": "3  Methods",
+    "section": "",
+    "text": "4 Methods\nFor this analysis, I used data from the Nebraska Department of Transportation and the National Bridge Inventory (NBI) to look at the condition of bridges across Nebraska. The data that I collected includes details about the bridges conditions, how much traffic they carry, the year they were built, and other factors that could be crucial to determining if repair is necessary.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "Methods.html#data-preparation",
+    "href": "Methods.html#data-preparation",
+    "title": "3  Methods",
+    "section": "4.1 Data Preparation",
+    "text": "4.1 Data Preparation\n\nBridge Condition Data: The condition of each bridge was classified into four categories: Good, Fair, Poor, and Closed. The data was then sorted by different bridge systems in Nebraska, like the County System and the State System. This was important to understanding how bridges across the entire state were doing.\nTraffic Data: The data set included information for specific bridges. Specifically it included the number of vehicles crossing each bridge daily. This gave insight to which bridges might be under more stress on a daily basis.\nRisk Level Calculation: To figure out which bridges pose the highest risk, I assigned a level to each one. Bridges in poor condition with more than 30,000 vehicles crossing each day were labeled as high risk. Bridges in poor condition with fewer that 30,000 vehicles, or bridges in fair condition with more than 30,000 vehicles, were considered moderate risk. All other bridges were considered low risk.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "Methods.html#statistical-analysis",
+    "href": "Methods.html#statistical-analysis",
+    "title": "3  Methods",
+    "section": "4.2 Statistical Analysis",
+    "text": "4.2 Statistical Analysis\n\nVisual Analysis: I created multiple charts and graphs to help better visualize the data. These included bar charts and scatter plots which displayed how traffic volume and bridge condition. These charts helped to identify trends and any unusual data points.\nANOVA: To identify if the age of a bridge (how long since it has been built) affects its condition, I used an Analysis of Variance test. This test determined if there is a significant difference in the condition of bridge levels based on when they were built.\nRisk Level Distribution: I created a stacked bar chart to visualize how the risk levels were distributed across counties in Nebraska to determine which counties had the most high-risk bridges.\n\nThe methods applied gave a comprehensive overview of the current state of many Nebraska bridges, focusing on identifying the infrastructure at the highest risk. By combining visualizations and statistical tests, the analysis aims to provide insights for decision-makers regarding bridge safety in Omaha.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "Results.html",
+    "href": "Results.html",
+    "title": "4  Results",
+    "section": "",
+    "text": "5 Results",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "Results.html#bridge-condition-by-system",
+    "href": "Results.html#bridge-condition-by-system",
+    "title": "4  Results",
+    "section": "5.1 Bridge Condition by System",
+    "text": "5.1 Bridge Condition by System\n\nlibrary(ggplot2)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(tidyr)\ndata &lt;- data.frame(\n  System = c(\"County System\", \"First Class Cities\", \"State System\", \"NHS State System\", \n             \"NHS Local System\", \"Nebraska\"),\n  Good = c(46.7, 55.0, 70.7, 67.5, 29.7, 58.3),\n  Fair = c(34.7, 39.5, 26.2, 29.8, 62.5, 33.9),\n  Poor = c(8.3, 4.1, 2.9, 2.3, 4.7, 6.9),\n  Closed = c(1.5, 0.6, 0.0, 0.1, 3.1, 1.1)\n)\n\ndata_long &lt;- data |&gt;\n  pivot_longer(cols = Good:Closed, names_to = \"Condition\", values_to = \"Percentage\")\n\nggplot(data_long, aes(x = System, y = Percentage, fill = Condition)) +\n  geom_bar(stat = \"identity\") +\n  labs(title = \"Bridge Condition by System in Nebraska\", \n       x = \"Bridge System\", \n       y = \"Percentage of Bridges\") +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +\n  scale_fill_manual(values = c(\"Good\" = \"lightgreen\", \"Fair\" = \"yellow\", \"Poor\" = \"red\", \"Closed\" = \"gray\"))\n\n\n\n\n\n\n\nlibrary(dplyr)\n\nThis stacked bar chart displays bridge conditions across various systems in Nebraska. The State System had the highest percentage of bridges in the Good condition (70.7%). First Class Cities had the second highest percentage in the Good condition (55%). The County System had the lowest percentage of Good condition bridges (46.7%). Bridges in Poor condition were the most common in the County System (8.3%). These results suggest that County System Bridges are facing the most infrastructure challenges.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "Results.html#bridge-traffic-vs-condition",
+    "href": "Results.html#bridge-traffic-vs-condition",
+    "title": "4  Results",
+    "section": "5.2 Bridge Traffic vs Condition",
+    "text": "5.2 Bridge Traffic vs Condition\n\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(tidyr)\n\nbridge_data &lt;- data.frame(\n  Bridge = c(\"US75 over J St\", \"US75 over Stream\", \"72nd St/FAU 5037 over UPRR\", \"US75 over Betz Creek\", \n             \"42nd St/FAU 5057 over UPRR\", \"42nd St/FAU 5057 over UPRR\", \"SB-I180/US34 over I80\", \n             \"NB-I180/US34 over I80\", \"N370 over Papillion Creek Trib\", \"US6 over Saddle Creek Rd\", \n             \"N50 over I80\", \"N38 over Big Papillion Creek\", \"US275/N92 over 72nd Street\", \n             \"N 14th St/FAU 5227 over Oak Creek\", \"14th St over US6\", \"WB-US30/US81 over Loup River\", \n             \"US6 over Up/BNSF RR\", \"N31 over Park/Papio\", \"Bell St over UPRR\", \"US77 over Elm Creek\", \n             \"36th St/Fas 5061 over Papillion Creek\", \"Hamiltn St/Fau5066 over US75\", \"US30 over Fremont Co Drain Ditch\", \n             \"Norflk Ave/FAU6020 over N Fk Elkhorn River\", \"I80 over Link 17B & Rd 77\"),\n  County = c(\"Douglas\", \"Sarpy\", \"Douglas\", \"Sarpy\", \"Douglas\", \"Douglas\", \"Lancaster\", \"Lancaster\", \n             \"Sarpy\", \"Douglas\", \"Sarpy\", \"Douglas\", \"Douglas\", \"Lancaster\", \"Lancaster\", \"Platte\", \n             \"Lancaster\", \"Douglas\", \"Dodge\", \"Dodge\", \"Sarpy\", \"Douglas\", \"Dodge\", \"Madison\", \"Cheyenne\"),\n  Year_Built = c(1970, 1988, 1966, 1989, 1960, 1960, 1960, 1960, 1995, 1934, 1958, 1964, 1962, 1968, 1961, \n                 1931, 1936, 1938, 1994, 1954, 1984, 1977, 1970, 1968, 1974),\n  Daily_Crossings = c(85640, 58870, 56260, 38095, 38000, 38000, 32795, 32795, 30705, 26220, 26190, \n                      26100, 24360, 21660, 19190, 14395, 11505, 11100, 9570, 9535, 9470, 8730, 8310, 8130, 7800),\n  Condition = c(\"Poor\", \"Fair\", \"Fair\", \"Fair\", \"Poor\", \"Poor\", \"Good\", \"Good\", \"Fair\", \"Fair\", \"Fair\", \n                \"Fair\", \"Fair\", \"Good\", \"Fair\", \"Good\", \"Fair\", \"Poor\", \"Good\", \"Fair\", \"Fair\", \"Fair\", \n                \"Fair\", \"Good\", \"Fair\")\n)\n\nbridge_data$Condition_Numeric &lt;- factor(bridge_data$Condition, levels = c(\"Good\", \"Fair\", \"Poor\"), labels = c(1, 2, 3))\n\nggplot(bridge_data, aes(x = Daily_Crossings, y = Condition_Numeric, size = Daily_Crossings, color = Condition_Numeric)) +\n  geom_point(alpha = 0.7) +\n  labs(title = \"Bridge Traffic vs Condition\", \n       x = \"Daily Crossings\", \n       y = \"Condition (1 = Good, 2 = Fair, 3 = Poor)\") +\n  scale_color_manual(values = c(\"green\", \"yellow\", \"red\")) +\n  scale_size_continuous(range = c(1, 5)) +\n  theme_minimal()\n\n\n\n\n\n\n\n\nThe relationship between daily crossing and bridge condition was shown in this scatter plot. The data shows that bridges with higher crossing tend to be in worse condition. Poor condition bridges are seen to be associated with higher traffic volumes (US75 over J St with 85,640 daily crossings), while Good condition bridges tend to have lower traffic. However, the data points indicate considerate variablity because there are some Good and Fair conditioned bridges that have high daily crossings.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "Results.html#frequency-of-bridge-condition-by-county",
+    "href": "Results.html#frequency-of-bridge-condition-by-county",
+    "title": "4  Results",
+    "section": "5.3 Frequency of Bridge Condition by County",
+    "text": "5.3 Frequency of Bridge Condition by County\n\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(tidyr)\n\nggplot(bridge_data, aes(x = County, fill = Condition)) +\n  geom_bar(position = \"dodge\") +\n  labs(title = \"Frequency of Bridge Condition by County\", \n       x = \"County\", \n       y = \"Count of Bridges\") +\n  scale_fill_manual(values = c(\"green\", \"yellow\", \"red\")) +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\n\n\n\n\nThis bar chart displays the frequency of bridge conditions across different NE counties. Douglas County has the highest count of Fair condition bridges, followed by Sarpy County. The distribution shows the highest frequency of Fair bridges throughout Nebraska. Douglas County also has the highest frequency of Poor condition bridges.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "Results.html#average-condition-by-year-build",
+    "href": "Results.html#average-condition-by-year-build",
+    "title": "4  Results",
+    "section": "5.4 Average Condition By Year Build",
+    "text": "5.4 Average Condition By Year Build\n\nbridge_data$Year_Built &lt;- factor(bridge_data$Year_Built)\nbridge_data$Year_Built &lt;- droplevels(bridge_data$Year_Built)\nbridge_data$Year_Built &lt;- as.numeric(as.character(bridge_data$Year_Built))\nbridge_data$Condition_Numeric &lt;- as.numeric(bridge_data$Condition_Numeric)\n\nclass(bridge_data$Year_Built)\n\n[1] \"numeric\"\n\nanova_result &lt;- aov(Condition_Numeric ~ Year_Built, data = bridge_data)\nsummary(anova_result)\n\n            Df Sum Sq Mean Sq F value Pr(&gt;F)\nYear_Built   1  0.073  0.0727   0.171  0.683\nResiduals   23  9.767  0.4247               \n\n\nAn ANOVA was conducted to determine whether the year a bridge was built had a significant effect on it’s condition rating. The results indicated that their was no significant difference in condition based on year built, (F = 0.171, p = 0.683). This suggests that the age of a bridge alone does not predict its current condition and that it is important to consider other factors that may effect bridge condition.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "Results.html#risk-level-assessment",
+    "href": "Results.html#risk-level-assessment",
+    "title": "4  Results",
+    "section": "5.5 Risk Level Assessment",
+    "text": "5.5 Risk Level Assessment\n\nbridge_data &lt;- bridge_data %&gt;%\n  mutate(Risk_Level = case_when(\n    Condition == \"Poor\" & Daily_Crossings &gt; 30000 ~ \"High\",\n    (Condition == \"Poor\" & Daily_Crossings &lt;= 30000) |\n      (Condition == \"Fair\" & Daily_Crossings &gt; 30000) ~ \"Moderate\",\n    TRUE ~ \"Low\"\n  ))\n\nggplot(bridge_data, aes(x = County, fill = Risk_Level)) +\n  geom_bar(position = \"stack\") +\n  labs(title = \"Bridge Risk Levels by County\",\n       x = \"County\",\n       y = \"Number of Bridges\") +\n  scale_fill_manual(values = c(\"High\" = \"red\", \"Moderate\" = \"yellow\", \"Low\" = \"green\")) +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\n\n\n\n\nThis stacked bar chart analyzes the distribution of risk levels across Nebraska counties. Douglas County has the highest count of high-risk bridges, followed by Sarpy County. The majority of low-risk bridges are spread more evenly across counties. These results reinforce the need for targeted maintenance efforts in high-traffic Omaha areas.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "Results.html#implications",
+    "href": "Results.html#implications",
+    "title": "4  Results",
+    "section": "5.6 Implications",
+    "text": "5.6 Implications\nThese findings suggest that while there is some correlation between traffic volume and condition, other factors like age and maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions. Counties like Douglas and Sarpy currently require attention to ensure safety on their bridges.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "Conclusion.html",
+    "href": "Conclusion.html",
+    "title": "5  Conclusion",
+    "section": "",
+    "text": "6 Conclusion\nThis report offers a good starting point for understanding the risks of bridge failure in Omaha. However, it is important to keep in mind that the data comes from public sources. While this data is reliable, the inspection methods and how often they inspect the bridges can vary. The data also looks at bridges in all of Nebraska, so it isn’t always specific at the city level. It is also important to keep in mind a bridge collapse can’t exactly be predicted, and this report only considers the likelihood based on their conditions. It gives us a good starting point on what poses us the most risk.\nThe analysis reveals that bridges classified as being in “poor” condition are a significant risk to the city, especially those that carry high traffic volumes. Bridges like US75 over J St, which carry more than 85,000 daily crossings, are an example of a high-risk structure that requires attention. The data indicated that the County System, particularly in areas like Douglas and Sarpy Counties, face the most threat, with higher percentage of poor-condition bridges and high traffic.\nWith that being said, it is clear that focusing on bridges in poor condition, especially those with heavy daily traffic, is critical for reducing risk to our city. These bridges should be prioritized for repairs and improvements. Additionally, while the year a bridge was built does not appear to significantly affect its current condition, ongoing maintenance is crucial for preventing problems in the future.\nIn conclusion, it is essential to be proactive with this information for the safety of Omaha. Using this data Omaha can reduce the likelihood of bridge failures and ensure continued safety.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Conclusion</span>"
+    ]
+  },
+  {
     "objectID": "draft-data-doc.html",
     "href": "draft-data-doc.html",
     "title": "Appendix A — Draft: Data Documentation",
     "section": "",
-    "text": "#1."
-  },
-  {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
-    "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever."
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "A.1 Bridge Condition Report (Nebraska.gov)\nhttps://dot.nebraska.gov/media/mopjemdw/bridge-condition-report-summary.pdf\nThis data from March 2024 categorizes Nebraska’s bridges by ownership type and their condition after inspection. It shows the number of bridges, their total area, and the condition of each bridge (good, fair, poor, closed, and low load)\nOwnership Categories:\nCondition Classifications:",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Draft: Data Documentation</span>"
+    ]
   },
   {
     "objectID": "draft-data-doc.html#bridge-condition-report-nebraska.gov",
     "href": "draft-data-doc.html#bridge-condition-report-nebraska.gov",
     "title": "Appendix A — Draft: Data Documentation",
-    "section": "A.1 Bridge Condition Report (Nebraska.gov)",
-    "text": "A.1 Bridge Condition Report (Nebraska.gov)\nhttps://dot.nebraska.gov/media/mopjemdw/bridge-condition-report-summary.pdf\nThis data from March 2024 categorizes Nebraska’s bridges by ownership type and their condition after inspection. It shows the number of bridges, their total area, and the condition of each bridge (good, fair, poor, closed, and low load)\nOwnership Categories:\n\nCountry system\nFirst Class Cities\nState System\nNHS System\n\nCondition Classifications:\n\nGood\nFair\nPoor\nClosed\nLow Load"
+    "section": "",
+    "text": "Country system\nFirst Class Cities\nState System\nNHS System\n\n\n\nGood\nFair\nPoor\nClosed\nLow Load",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Draft: Data Documentation</span>"
+    ]
   },
   {
     "objectID": "draft-data-doc.html#national-bridge-inventory-nebraska-american-road-transportation-builders-association",
     "href": "draft-data-doc.html#national-bridge-inventory-nebraska-american-road-transportation-builders-association",
     "title": "Appendix A — Draft: Data Documentation",
     "section": "A.2 National Bridge Inventory: Nebraska (American Road & Transportation Builders Association)",
-    "text": "A.2 National Bridge Inventory: Nebraska (American Road & Transportation Builders Association)\nhttps://artbabridgereport.org/state/profile/NE\nThis breaks down what bridges in Nebraska need repair. It sorts them in different ways like the country the most traveled bridges are in and includes the year build and number of daily crossings. It also includes bridge work that has been proposed and how much these repairs would cost."
+    "text": "A.2 National Bridge Inventory: Nebraska (American Road & Transportation Builders Association)\nhttps://artbabridgereport.org/state/profile/NE\nThis breaks down what bridges in Nebraska need repair. It sorts them in different ways like the country the most traveled bridges are in and includes the year build and number of daily crossings. It also includes bridge work that has been proposed and how much these repairs would cost.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Draft: Data Documentation</span>"
+    ]
+  },
+  {
+    "objectID": "draft-results.html",
+    "href": "draft-results.html",
+    "title": "Appendix B — Draft: Results",
+    "section": "",
+    "text": "C Results",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
   },
   {
     "objectID": "draft-results.html#bridge-condition-by-system",
     "href": "draft-results.html#bridge-condition-by-system",
     "title": "Appendix B — Draft: Results",
-    "section": "B.1 Bridge Condition by System",
-    "text": "B.1 Bridge Condition by System\n\n\n\n\n\nThis stacked bar chart displays bridge conditions across various systems in Nebraska. The State System had the highest percentage of bridges in the Good condition (70.7%). First Class Cities had the second highest percentage in the Good condition (55%). The County System had the lowest percentage of Good condition bridges (46.7%). Bridges in Poor condition were the most common in the County System (8.3%)."
+    "section": "C.1 Bridge Condition by System",
+    "text": "C.1 Bridge Condition by System\n\nlibrary(ggplot2)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(tidyr)\ndata &lt;- data.frame(\n  System = c(\"County System\", \"First Class Cities\", \"State System\", \"NHS State System\", \n             \"NHS Local System\", \"Nebraska\"),\n  Good = c(46.7, 55.0, 70.7, 67.5, 29.7, 58.3),\n  Fair = c(34.7, 39.5, 26.2, 29.8, 62.5, 33.9),\n  Poor = c(8.3, 4.1, 2.9, 2.3, 4.7, 6.9),\n  Closed = c(1.5, 0.6, 0.0, 0.1, 3.1, 1.1)\n)\n\ndata_long &lt;- data |&gt;\n  pivot_longer(cols = Good:Closed, names_to = \"Condition\", values_to = \"Percentage\")\n\nggplot(data_long, aes(x = System, y = Percentage, fill = Condition)) +\n  geom_bar(stat = \"identity\") +\n  labs(title = \"Bridge Condition by System in Nebraska\", \n       x = \"Bridge System\", \n       y = \"Percentage of Bridges\") +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +\n  scale_fill_manual(values = c(\"Good\" = \"lightgreen\", \"Fair\" = \"yellow\", \"Poor\" = \"red\", \"Closed\" = \"gray\"))\n\n\n\n\n\n\n\nlibrary(dplyr)\n\nThis stacked bar chart displays bridge conditions across various systems in Nebraska. The State System had the highest percentage of bridges in the Good condition (70.7%). First Class Cities had the second highest percentage in the Good condition (55%). The County System had the lowest percentage of Good condition bridges (46.7%). Bridges in Poor condition were the most common in the County System (8.3%). These results suggest that County System Bridges are facing the most infrastructure challenges.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
   },
   {
     "objectID": "draft-results.html#bridge-traffic-vs-condition",
     "href": "draft-results.html#bridge-traffic-vs-condition",
     "title": "Appendix B — Draft: Results",
-    "section": "B.2 Bridge Traffic vs Condition",
-    "text": "B.2 Bridge Traffic vs Condition\n\nThe relationship between daily crossing and bridge condition was shown in this scatter plot. The data shows that bridges with higher crossing tend to be in worse condition. Poor condition bridges are seen to be associated with higher traffic volumes, while Good condition bridges tend to have lower traffic. However, the data points indicate considerate variabliity because there are some Good and Fair conditioned bridges that have high daily crossings.",
+    "section": "C.2 Bridge Traffic vs Condition",
+    "text": "C.2 Bridge Traffic vs Condition\n\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(tidyr)\n\nbridge_data &lt;- data.frame(\n  Bridge = c(\"US75 over J St\", \"US75 over Stream\", \"72nd St/FAU 5037 over UPRR\", \"US75 over Betz Creek\", \n             \"42nd St/FAU 5057 over UPRR\", \"42nd St/FAU 5057 over UPRR\", \"SB-I180/US34 over I80\", \n             \"NB-I180/US34 over I80\", \"N370 over Papillion Creek Trib\", \"US6 over Saddle Creek Rd\", \n             \"N50 over I80\", \"N38 over Big Papillion Creek\", \"US275/N92 over 72nd Street\", \n             \"N 14th St/FAU 5227 over Oak Creek\", \"14th St over US6\", \"WB-US30/US81 over Loup River\", \n             \"US6 over Up/BNSF RR\", \"N31 over Park/Papio\", \"Bell St over UPRR\", \"US77 over Elm Creek\", \n             \"36th St/Fas 5061 over Papillion Creek\", \"Hamiltn St/Fau5066 over US75\", \"US30 over Fremont Co Drain Ditch\", \n             \"Norflk Ave/FAU6020 over N Fk Elkhorn River\", \"I80 over Link 17B & Rd 77\"),\n  County = c(\"Douglas\", \"Sarpy\", \"Douglas\", \"Sarpy\", \"Douglas\", \"Douglas\", \"Lancaster\", \"Lancaster\", \n             \"Sarpy\", \"Douglas\", \"Sarpy\", \"Douglas\", \"Douglas\", \"Lancaster\", \"Lancaster\", \"Platte\", \n             \"Lancaster\", \"Douglas\", \"Dodge\", \"Dodge\", \"Sarpy\", \"Douglas\", \"Dodge\", \"Madison\", \"Cheyenne\"),\n  Year_Built = c(1970, 1988, 1966, 1989, 1960, 1960, 1960, 1960, 1995, 1934, 1958, 1964, 1962, 1968, 1961, \n                 1931, 1936, 1938, 1994, 1954, 1984, 1977, 1970, 1968, 1974),\n  Daily_Crossings = c(85640, 58870, 56260, 38095, 38000, 38000, 32795, 32795, 30705, 26220, 26190, \n                      26100, 24360, 21660, 19190, 14395, 11505, 11100, 9570, 9535, 9470, 8730, 8310, 8130, 7800),\n  Condition = c(\"Poor\", \"Fair\", \"Fair\", \"Fair\", \"Poor\", \"Poor\", \"Good\", \"Good\", \"Fair\", \"Fair\", \"Fair\", \n                \"Fair\", \"Fair\", \"Good\", \"Fair\", \"Good\", \"Fair\", \"Poor\", \"Good\", \"Fair\", \"Fair\", \"Fair\", \n                \"Fair\", \"Good\", \"Fair\")\n)\n\nbridge_data$Condition_Numeric &lt;- factor(bridge_data$Condition, levels = c(\"Good\", \"Fair\", \"Poor\"), labels = c(1, 2, 3))\n\n# Create scatter plot\nggplot(bridge_data, aes(x = Daily_Crossings, y = Condition_Numeric, size = Daily_Crossings, color = Condition_Numeric)) +\n  geom_point(alpha = 0.7) +\n  labs(title = \"Bridge Traffic vs Condition\", \n       x = \"Daily Crossings\", \n       y = \"Condition (1 = Good, 2 = Fair, 3 = Poor)\") +\n  scale_color_manual(values = c(\"green\", \"yellow\", \"red\")) +\n  scale_size_continuous(range = c(1, 5)) +\n  theme_minimal()\n\n\n\n\n\n\n\n\nThe relationship between daily crossing and bridge condition was shown in this scatter plot. The data shows that bridges with higher crossing tend to be in worse condition. Poor condition bridges are seen to be associated with higher traffic volumes (US75 over J St with 85,640 daily crossings), while Good condition bridges tend to have lower traffic. However, the data points indicate considerate variablity because there are some Good and Fair conditioned bridges that have high daily crossings.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
@@ -63,8 +249,8 @@
     "objectID": "draft-results.html#frequency-of-bridge-condition-by-county",
     "href": "draft-results.html#frequency-of-bridge-condition-by-county",
     "title": "Appendix B — Draft: Results",
-    "section": "B.3 Frequency of Bridge Condition by County",
-    "text": "B.3 Frequency of Bridge Condition by County\n\nThis bar chart displays the frequency of bridge conditions across different NE counties. Douglas County has the highest count of Fair condition bridges, followed by Sarpy County. The distribution shows the highest frequency of Fair bridges throughout Nebraska. Douglas County also has the highest frequency of Poor condition bridges.",
+    "section": "C.3 Frequency of Bridge Condition by County",
+    "text": "C.3 Frequency of Bridge Condition by County\n\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(tidyr)\n\nggplot(bridge_data, aes(x = County, fill = Condition)) +\n  geom_bar(position = \"dodge\") +\n  labs(title = \"Frequency of Bridge Condition by County\", \n       x = \"County\", \n       y = \"Count of Bridges\") +\n  scale_fill_manual(values = c(\"green\", \"yellow\", \"red\")) +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\n\n\n\n\nThis bar chart displays the frequency of bridge conditions across different NE counties. Douglas County has the highest count of Fair condition bridges, followed by Sarpy County. The distribution shows the highest frequency of Fair bridges throughout Nebraska. Douglas County also has the highest frequency of Poor condition bridges.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
@@ -74,19 +260,8 @@
     "objectID": "draft-results.html#average-condition-by-year-build",
     "href": "draft-results.html#average-condition-by-year-build",
     "title": "Appendix B — Draft: Results",
-    "section": "B.4 Average Condition By Year Build",
-    "text": "B.4 Average Condition By Year Build",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
-    ]
-  },
-  {
-    "objectID": "draft-results.html#risk-levels-by-county",
-    "href": "draft-results.html#risk-levels-by-county",
-    "title": "Appendix B — Draft: Results",
-    "section": "B.5 Risk Levels by County",
-    "text": "B.5 Risk Levels by County\n\nThis stacked bar chart analyzes the distribution of risk levels across counties. Douglas County has the highest count of high risk bridges, followed by Sarpy County. The distribution of moderate and low risk bridges is more evenly spread across the other counties.",
+    "section": "C.4 Average Condition By Year Build",
+    "text": "C.4 Average Condition By Year Build\n\nbridge_data$Year_Built &lt;- factor(bridge_data$Year_Built)\nbridge_data$Year_Built &lt;- droplevels(bridge_data$Year_Built)\nbridge_data$Year_Built &lt;- as.numeric(as.character(bridge_data$Year_Built))\nbridge_data$Condition_Numeric &lt;- as.numeric(bridge_data$Condition_Numeric)\n\nclass(bridge_data$Year_Built)\n\n[1] \"numeric\"\n\nanova_result &lt;- aov(Condition_Numeric ~ Year_Built, data = bridge_data)\nsummary(anova_result)\n\n            Df Sum Sq Mean Sq F value Pr(&gt;F)\nYear_Built   1  0.073  0.0727   0.171  0.683\nResiduals   23  9.767  0.4247               \n\n\nAn ANOVA was conducted to determine whether the year a bridge was built had a significant effect on it’s condition rating. The results indicated that their was no significant difference in condition based on year built, (F = 0.171, p = 0.683). This suggests that the age of a bridge alone does not predict its current condition and that it is important to consider other factors that may effect bridge condition.\n\n# Create a risk level column based on condition and traffic\nbridge_data &lt;- bridge_data %&gt;%\n  mutate(Risk_Level = case_when(\n    Condition == \"Poor\" & Daily_Crossings &gt; 30000 ~ \"High\",\n    (Condition == \"Poor\" & Daily_Crossings &lt;= 30000) |\n      (Condition == \"Fair\" & Daily_Crossings &gt; 30000) ~ \"Moderate\",\n    TRUE ~ \"Low\"\n  ))\n\n# Bar plot showing risk levels by county\nggplot(bridge_data, aes(x = County, fill = Risk_Level)) +\n  geom_bar(position = \"stack\") +\n  labs(title = \"Bridge Risk Levels by County\",\n       x = \"County\",\n       y = \"Number of Bridges\") +\n  scale_fill_manual(values = c(\"High\" = \"red\", \"Moderate\" = \"yellow\", \"Low\" = \"green\")) +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\n\n\n\n\nThis stacked bar chart analyzes the distribution of risk levels across Nebraska counties. Douglas County has the highest count of high-risk bridges, followed by Sarpy County. The majority of low-risk bridges are spread more evenly across counties. These results reinforce the need for targeted maintenance efforts in high-traffic Omaha areas.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
@@ -96,8 +271,8 @@
     "objectID": "draft-results.html#implications",
     "href": "draft-results.html#implications",
     "title": "Appendix B — Draft: Results",
-    "section": "B.6 Implications",
-    "text": "B.6 Implications\nThese findings suggest that while there is some correlation between traffic volume and condition, other factors like age and maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions. Counties like Douglas and Sarpy currently require attention to ensure safety on their bridges.",
+    "section": "C.5 Implications",
+    "text": "C.5 Implications\nThese findings suggest that while there is some correlation between traffic volume and condition, other factors like age and maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions. Counties like Douglas and Sarpy currently require attention to ensure safety on their bridges.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
@@ -119,21 +294,32 @@
     "href": "draft-intro-conclusions.html#conclusion",
     "title": "Appendix C — Draft: Intro/Conclusions",
     "section": "C.2 Conclusion",
-    "text": "C.2 Conclusion\nThis report offers a good starting point for understanding the risks of bridge failure in Omaha. However, it is important to keep in mind that the data comes from public sources. While this data is reliable, the inspection methods and how often they inspect the bridges can vary. The data also looks at bridges in all of Nebraska, so it isn’t always specific at the city level. It is also important to keep in mind a bridge collapse can’t exactly be predicted, and this report only considers the likelihood based on their conditions. It gives us a good starting point on what poses us the most risk.\nWith that being said, it is clear that bridges classified as being in “poor” condition are a real risk to the city. Especially the bridges that carry high traffic every day. It is important to take this information into consideration and be proactive about the safety of our city.",
+    "text": "C.2 Conclusion\nThis report offers a good starting point for understanding the risks of bridge failure in Omaha. However, it is important to keep in mind that the data comes from public sources. While this data is reliable, the inspection methods and how often they inspect the bridges can vary. The data also looks at bridges in all of Nebraska, so it isn’t always specific at the city level. It is also important to keep in mind a bridge collapse can’t exactly be predicted, and this report only considers the likelihood based on their conditions. It gives us a good starting point on what poses us the most risk.\nThe analysis reveals that bridges classified as being in “poor” condition are a significant risk to the city, especially those that carry high traffic volumes. Bridges like US75 over J St, which carry more than 85,000 daily crossings, are an example of a high-risk structure that requires attention. The data indicated that the County System, particularly in areas like Douglas and Sarpy Counties, face the most threat, with higher percentage of poor-condition bridges and high traffic.\nWith that being said, it is clear that focusing on bridges in poor condition, especially those with heavy daily traffic, is critical for reducing risk to our city. These bridges should be prioritized for repairs and improvements. Additionally, while the year a bridge was built does not appear to significantly affect its current condition, ongoing maintenance is crucial for preventing problems in the future.\nIn conclusion, it is essential to be proactive with this information for the safety of Omaha. Using this data Omaha can reduce the likelihood of bridge failures and ensure continued safety.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>C</span>  <span class='chapter-title'>Draft: Intro/Conclusions</span>"
     ]
   },
   {
-    "objectID": "draft-results.html",
-    "href": "draft-results.html",
-    "title": "Appendix B — Draft: Results",
+    "objectID": "draft-exec-summary.html",
+    "href": "draft-exec-summary.html",
+    "title": "Appendix D — Draft: Executive Summary",
     "section": "",
-    "text": "B.1 Bridge Condition by System\nlibrary(ggplot2)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(tidyr)\ndata &lt;- data.frame(\n  System = c(\"County System\", \"First Class Cities\", \"State System\", \"NHS State System\", \n             \"NHS Local System\", \"Nebraska\"),\n  Good = c(46.7, 55.0, 70.7, 67.5, 29.7, 58.3),\n  Fair = c(34.7, 39.5, 26.2, 29.8, 62.5, 33.9),\n  Poor = c(8.3, 4.1, 2.9, 2.3, 4.7, 6.9),\n  Closed = c(1.5, 0.6, 0.0, 0.1, 3.1, 1.1)\n)\n\ndata_long &lt;- data |&gt;\n  pivot_longer(cols = Good:Closed, names_to = \"Condition\", values_to = \"Percentage\")\n\nggplot(data_long, aes(x = System, y = Percentage, fill = Condition)) +\n  geom_bar(stat = \"identity\") +\n  labs(title = \"Bridge Condition by System in Nebraska\", \n       x = \"Bridge System\", \n       y = \"Percentage of Bridges\") +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +\n  scale_fill_manual(values = c(\"Good\" = \"lightgreen\", \"Fair\" = \"yellow\", \"Poor\" = \"red\", \"Closed\" = \"gray\"))\nThis stacked bar chart displays bridge conditions across various systems in Nebraska. The State System had the highest percentage of bridges in the Good condition (70.7%). First Class Cities had the second highest percentage in the Good condition (55%). The County System had the lowest percentage of Good condition bridges (46.7%). Bridges in Poor condition were the most common in the County System (8.3%).",
+    "text": "D.1 Executive Summary\nThis report was created in response to the mayor’s concern about bridge safety in Omaha, NE after several bridge collapses on the East Coast in 2024. Using data from the Nebraska Department of Transportation and the National Bridge Inventory, I looked at the current condition of bridges not only in Omaha, but across the state of Nebraska. Bridges were rated as being in poor, fair, or good condition. It was also taken into consideration if they were a high traffic bridge or not.\nAlthough it is hard to predict exactly if or when a bridge may collapse, this data shows that some bridges in the area could be a potential risk to the public if not repaired. The bridges that were inspected to be in poor condition and that carry the most traffic on a daily basis raise the most concern to our city.\nTo reduce the chances of a collapse occurring, Omaha should invest in repairs to bridges that are used more frequently. Being proactive about these issues will keep people safe and prevent a major bridge collapse in the future.Executive Summary\nThe report is organized into the following section:",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Draft: Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "draft-exec-summary.html#executive-summary",
+    "href": "draft-exec-summary.html#executive-summary",
+    "title": "Appendix D — Draft: Executive Summary",
+    "section": "",
+    "text": "D.1.1 Introduction and Background\nIn this section, the importance of bridge safety is outlined, focusing on the recent bridge collapses on the East Coast that raised concerns in Omaha. The introduction explains the context of the mayor’s request for an analysis of Omaha’s bridges and the need to be proactive about our safety.\n\n\nD.1.2 Methods\nThe methods section explains the data sources used in the analysis, including the Nebraska Department of Transportation and the National Bridge Inventory. A description of the bridge rating system - poor, fair, and good - is provided. The methods section includes the consideration of traffic volume, focusing particularly on high traffic bridges as a key factor in determining which bridges are the most at risk. It also outlines the criteria for identifying the bridges that need the most attention.,\n\n\nD.1.3 Results\nThis section presents the findings of my analysis, which breaks down the number of bridges in each condition category (poor, fair, good). It identifies the birdges in poor conditions also carry high daily traffic volumes. From the results, we see that while most bridges are in fair or good condition, there are many in poor condition that have high traffic volumes. This could pose a serious risk to public safety. The results section also provides visuals, such as graphs, to get a better picture of the bridge condtions.\n\n\nD.1.4 Conclusion\nThe conclusion summarizes the key findings in the analysis, highlighting the bridges in poor condition that carry the most traffic. Emphasizing that while the risk of collapse is hard to predict, the data shows that some bridges are at a higher risk due to their condition. The conclusion addresses the need for immediate action to prevent issues in the future.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Draft: Executive Summary</span>"
     ]
   }
 ]
