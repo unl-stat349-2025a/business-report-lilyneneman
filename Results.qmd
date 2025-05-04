@@ -157,7 +157,7 @@ ggplot(bridge_data, aes(x = County, fill = Risk_Level)) +
   labs(title = "Bridge Risk Levels by County", 
        x = "County", 
        y = "Number of Bridges") + 
-  scale_fill_manual(values = c("High" = "#1D3557", "Moderate" = "#457B9D", "Low" = "#A8DADC")) +  # Blue color scheme
+  scale_fill_manual(values = c("High" = "#1D3557", "Moderate" = "#457B9D", "Low" = "#A8DADC")) +  
   theme_minimal(base_size = 15, base_family = "Arial") + 
   theme(axis.text.x = element_text(angle = 45, hjust = 1))  
 
