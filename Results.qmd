@@ -27,9 +27,8 @@ ggplot(data_long, aes(x = System, y = Percentage, fill = Condition)) +
        x = "Bridge System", 
        y = "Percentage of Bridges") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  scale_fill_manual(values = c("Good" = "lightgreen", "Fair" = "yellow", "Poor" = "red", "Closed" = "gray"))
+  scale_fill_manual(values = c("Good" = "lightblue", "Fair" = "steelblue", "Poor" = "darkblue", "Closed" = "gray"))
 
-library(dplyr)
 ```
 
 This stacked bar chart displays bridge conditions across various systems in Nebraska. The State System had the highest percentage of bridges in the Good condition (70.7%). First Class Cities had the second highest percentage in the Good condition (55%). The County System had the lowest percentage of Good condition bridges (46.7%). Bridges in Poor condition were the most common in the County System (8.3%). These results suggest that County System Bridges are facing the most infrastructure challenges.
@@ -62,16 +61,29 @@ bridge_data <- data.frame(
                 "Fair", "Good", "Fair")
 )
 
-bridge_data$Condition_Numeric <- factor(bridge_data$Condition, levels = c("Good", "Fair", "Poor"), labels = c(1, 2, 3))
+summary(bridge_data)
 
-ggplot(bridge_data, aes(x = Daily_Crossings, y = Condition_Numeric, size = Daily_Crossings, color = Condition_Numeric)) +
+bridge_data$Condition <- factor(bridge_data$Condition, 
+                                levels = c("Good", "Fair", "Poor", "Closed"),
+                                ordered = TRUE)
+
+bridge_data$Condition_Numeric <- recode(bridge_data$Condition, 
+                                        "Good" = 1, "Fair" = 2, "Poor" = 3, "Closed" = 4)
+ggplot(bridge_data, aes(x = Daily_Crossings, y = Condition_Numeric, 
+                        size = Daily_Crossings, color = Condition)) +
   geom_point(alpha = 0.7) +
   labs(title = "Bridge Traffic vs Condition", 
        x = "Daily Crossings", 
-       y = "Condition (1 = Good, 2 = Fair, 3 = Poor)") +
-  scale_color_manual(values = c("green", "yellow", "red")) +
+       y = "Condition (1 = Good, 2 = Fair, 3 = Poor, 4 = Closed)", 
+       color = "Condition") +
+  scale_color_manual(values = c("Good" = "lightblue", 
+                                "Fair" = "steelblue", 
+                                "Poor" = "darkblue", 
+                                "Closed" = "grey")) +
   scale_size_continuous(range = c(1, 5)) +
-  theme_minimal()
+  theme_minimal(base_family = "Arial") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
 ```
 
 The relationship between daily crossing and bridge condition was shown in this scatter plot. The data shows that bridges with higher crossing tend to be in worse condition. Poor condition bridges are seen to be associated with higher traffic volumes (US75 over J St with 85,640 daily crossings), while Good condition bridges tend to have lower traffic. However, the data points indicate considerate variablity because there are some Good and Fair conditioned bridges that have high daily crossings.
@@ -82,13 +94,13 @@ The relationship between daily crossing and bridge condition was shown in this s
 library(ggplot2)
 library(dplyr)
 library(tidyr)
-
 ggplot(bridge_data, aes(x = County, fill = Condition)) +
   geom_bar(position = "dodge") +
-  labs(title = "Frequency of Bridge Condition by County", 
-       x = "County", 
-       y = "Count of Bridges") +
-  scale_fill_manual(values = c("green", "yellow", "red")) +
+  labs(title = "Frequency of Bridge Condition by County",
+       x = "County", y = "Count of Bridges") +
+  scale_fill_manual(values = c("Closed" = "gray", "Poor" = "darkblue", "Fair" = "steelblue", "Good" = "lightblue")) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme_minimal(base_family = "Arial") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
@@ -106,38 +118,67 @@ class(bridge_data$Year_Built)
 
 
 anova_result <- aov(Condition_Numeric ~ Year_Built, data = bridge_data)
-summary(anova_result)
+
 ```
+
+|            | Df  | Sum Sq | Mean Sq | F Value | Pr(\>F) |
+|------------|-----|--------|---------|---------|---------|
+| Year Built | 1   | 0.073  | 0.0727  | 0.171   | 0.683   |
+| Residuals  | 23  | 9.767  | 0.4247  |         |         |
+|            |     |        |         |         |         |
 
 An ANOVA was conducted to determine whether the year a bridge was built had a significant effect on it's condition rating. The results indicated that their was no significant difference in condition based on year built, (F = 0.171, p = 0.683). This suggests that the age of a bridge alone does not predict its current condition and that it is important to consider other factors that may effect bridge condition.
 
 ## Risk Level Assessment
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
+
+library(knitr)
+
+summary_stats <- summary(bridge_data$Daily_Crossings)
+mean_crossings <- mean(bridge_data$Daily_Crossings)
+sd_crossings <- sd(bridge_data$Daily_Crossings)
+
 bridge_data <- bridge_data %>%
   mutate(Risk_Level = case_when(
-    Condition == "Poor" & Daily_Crossings > 30000 ~ "High",
-    (Condition == "Poor" & Daily_Crossings <= 30000) |
-      (Condition == "Fair" & Daily_Crossings > 30000) ~ "Moderate",
-    TRUE ~ "Low"
+    Daily_Crossings > 32795 ~ "High", 
+    Daily_Crossings > 24360 ~ "Moderate",      
+    TRUE ~ "Low"                              
   ))
 
-ggplot(bridge_data, aes(x = County, fill = Risk_Level)) +
-  geom_bar(position = "stack") +
-  labs(title = "Bridge Risk Levels by County",
-       x = "County",
-       y = "Number of Bridges") +
-  scale_fill_manual(values = c("High" = "red", "Moderate" = "yellow", "Low" = "green")) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+bridge_data <- bridge_data %>%
+  mutate(Risk_Level = case_when(
+    Daily_Crossings > 32795 ~ "High", 
+    Daily_Crossings > 24360 ~ "Moderate",      
+    TRUE ~ "Low"                              
+  ))
+ggplot(bridge_data, aes(x = County, fill = Risk_Level)) + 
+  geom_bar(position = "stack") + 
+  labs(title = "Bridge Risk Levels by County", 
+       x = "County", 
+       y = "Number of Bridges") + 
+  scale_fill_manual(values = c("High" = "#1D3557", "Moderate" = "#457B9D", "Low" = "#A8DADC")) +  # Blue color scheme
+  theme_minimal(base_size = 15, base_family = "Arial") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  
 
+bridge_data <- bridge_data %>%
+  mutate(Risk_Level = case_when(
+    Daily_Crossings > 32795 ~ "High", 
+    Daily_Crossings > 24360 ~ "Moderate",
+    TRUE ~ "Low"
+  ))
+risk_table <- bridge_data %>%
+  select(Bridge, County, Daily_Crossings, Condition, Risk_Level)
+
+kable(risk_table, caption = "Bridge Risk Level Assessment Based on Daily Crossings", align = 'l')
 ```
 
 This stacked bar chart analyzes the distribution of risk levels across Nebraska counties. Douglas County has the highest count of high-risk bridges, followed by Sarpy County. The majority of low-risk bridges are spread more evenly across counties. These results reinforce the need for targeted maintenance efforts in high-traffic Omaha areas.
 
 ## Implications
 
-These findings suggest that while there is some correlation between traffic volume and condition, other factors like their maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions, which could be attributed to better funding. On the other hand, ounties like Douglas and Sarpy, which have higher numbers of poor or fair-conditioned bridges require attention to ensure safety on.
+These findings suggest that while there is some correlation between traffic volume and condition, other factors like their maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions, which could be attributed to better funding. On the other hand, counties like Douglas and Sarpy, which have higher numbers of poor or fair-conditioned bridges require attention to ensure safety on.
 
 The data also reveals a concerning trend: bridges in poorer condition are likely to carry higher traffic volumes, which means placing more stress on vulnerable structures. This highlights a serious risk for disruptions in transportation if a collapse were to occur.
 
-In addition to age and traffic, maintenance history should be further considered in future assessments. While an ANOVA found no direct correlation between the year of construction and bridge condition, regular repairs play an important role in the safety of a bridge. 
+In addition to age and traffic, maintenance history should be further considered in future assessments. While an ANOVA found no direct correlation between the year of construction and bridge condition, regular repairs play an important role in the safety of a bridge.

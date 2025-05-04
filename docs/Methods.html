@@ -257,7 +257,12 @@ div.csl-indent {
 <ol type="1">
 <li>Bridge Condition Data: The condition of each bridge was classified into four categories: Good, Fair, Poor, and Closed. The data was then sorted by different bridge systems in Nebraska, like the County System and the State System. This was important to understanding how bridges across the entire state were doing.</li>
 <li>Traffic Data: The data set included information for specific bridges. Specifically it included the number of vehicles crossing each bridge daily. This gave insight to which bridges might be under more stress on a daily basis.</li>
-<li>Risk Level Calculation: To figure out which bridges pose the highest risk, I assigned a level to each one. Bridges in poor condition with more than 30,000 vehicles crossing each day were labeled as high risk. Bridges in poor condition with fewer that 30,000 vehicles, or bridges in fair condition with more than 30,000 vehicles, were considered moderate risk. All other bridges were considered low risk.</li>
+<li>Risk Level Calculation: To figure out which bridges pose the highest risk, a risk level was assigned to each bridge.
+<ul>
+<li><p>High Risk: Bridges with daily crossings above the 3rd Quartile (32,795). These are bridges with the highest traffic volumes and are likely to be under greater stress.</p></li>
+<li><p>Moderate Risk: Bridges with daily crossings between the Median (24,360) and 3rd Quartile (32,795). These bridges experience relatively high traffic.</p></li>
+<li><p>Low Risk: Bridges with daily crossings below the Median (24,360). These bridges experience lower traffic volumes and face less strain in terms of traffic.</p></li>
+</ul></li>
 </ol>
 </section>
 <section id="statistical-analysis" class="level2" data-number="3.3">

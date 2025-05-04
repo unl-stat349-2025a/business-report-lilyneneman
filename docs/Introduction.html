@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -213,11 +233,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>After several bridge collapses on the East Coast in 2024, Omaha’s mayor asked for a review of our city’s infrastructure. The report focuses on the chances of a bridge collapse here and the damage it would cause. Bridge safety is a growing concern across our nation, particularly after the tragic collapses on the East Coast. In the U.S. bridges are crucial to transportation and public safety.</p>
-<p>To understand the risk we face in Omaha, I used data from Nebraska’s Department of Transportation and the National Bridge Inventory to get an overview of Nebraska’s bridge conditions. The data includes how many bridges are in poor condition, how much traffic they carry, and other factors that go into whether a bridge may need repairs or not. Using this data, I can highlight specific problems like how many high traffic bridges are in poor condition in certain areas.</p>
+<p>After The Francis Scott Key Bridge collapsed in Baltimore in 2024 <span class="citation" data-cites="franklin2024">(<a href="references.html#ref-franklin2024" role="doc-biblioref">Franklin 2024</a>)</span>, Omaha’s mayor asked for a review of our city’s infrastructure. The report focuses on the chances of a bridge collapse here and the damage it would cause. Bridge safety is a growing concern across our nation, particularly after the tragic collapses on the East Coast. In the U.S. bridges are crucial to transportation and public safety.</p>
+<p>To understand the risk we face in Omaha, data from Nebraska’s Department of Transportation and the National Bridge Inventory was used to get an overview of Nebraska’s bridge conditions. The data includes how many bridges are in poor condition, how much traffic they carry, and other factors that go into whether a bridge may need repairs or not. Using this data, specific problems like how many high traffic bridges are in poor condition in certain areas are highlighted.</p>
 <p>Initial analysis suggests that certain bridges may be at a high risk of collapse due to the condition of the bridges in that area. This report will explore the potential impact of these conditions, and highlight areas that are cause for concern. The goal of this report is to figure out how likely a bridge collapse is - and what we can do to keep this from happening. This information is beneficial to help city officials make informed decisions and keep our bridges safe.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-franklin2024" class="csl-entry" role="listitem">
+Franklin, Jonathan. 2024. <span>“The Francis Scott Key Bridge in Baltimore Collapses, 6 Feared Dead.”</span> <em>NPR</em>, March. <a href="https://www.npr.org/2024/03/26/1240857704/francis-scott-key-bridge-collapse-baltimore">https://www.npr.org/2024/03/26/1240857704/francis-scott-key-bridge-collapse-baltimore</a>.
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

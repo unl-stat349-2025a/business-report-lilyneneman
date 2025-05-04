@@ -3,7 +3,7 @@ title: "Executive Summary"
 editor: visual
 ---
 
-This report was created in response to the mayor's concern about bridge safety in Omaha, NE after several bridge collapses on the East Coast in 2024. Using data from the Nebraska Department of Transportation [@noauthor_artba_nodate] and the National Bridge Inventory [@noauthor_bridge_nodate], I looked at the current condition of bridges not only in Omaha, but across the state of Nebraska. Bridges were rated as being in poor, fair, or good condition. It was also taken into consideration if they were a high traffic bridge or not.
+This report was created in response to the mayor's concern about bridge safety in Omaha, NE after several bridge collapses on the East Coast in 2024. Data from the Nebraska Department of Transportation [@noauthor_artba_nodate] and the National Bridge Inventory [@noauthor_bridge_nodate] was used to look at the current condition of bridges not only in Omaha, but across the state of Nebraska. Bridges were rated as being in poor, fair, or good condition. The report also take into consideration if the bridge was a high traffic.
 
 Although it is hard to predict exactly if or when a bridge may collapse, this data shows that some bridges in the area could be a potential risk to the public if not repaired. The bridges that were inspected to be in poor condition and that carry the most traffic on a daily basis raise the most concern to our city.
 
@@ -17,11 +17,11 @@ In this section, the importance of bridge safety is outlined, focusing on the re
 
 ## Methods
 
-The methods section explains the data sources used in the analysis, including the Nebraska Department of Transportation and the National Bridge Inventory. A description of the bridge rating system - poor, fair, and good - is provided. The methods section includes the consideration of traffic volume, focusing particularly on high traffic bridges as a key factor in determining which bridges are the most at risk. It also outlines the criteria for identifying the bridges that need the most attention.,
+The methods section explains the data sources used in the analysis, including the Nebraska Department of Transportation and the National Bridge Inventory. A description of the bridge rating system - poor, fair, and good - is provided. The methods section includes the consideration of traffic volume, focusing particularly on high traffic bridges as a key factor in determining which bridges are the most at risk. It also outlines the criteria for identifying the bridges that need the most attention.
 
 ## Results
 
-This section presents the findings of my analysis, which breaks down the number of bridges in each condition category (poor, fair, good). It identifies the birdges in poor conditions also carry high daily traffic volumes. From the results, we see that while most bridges are in fair or good condition, there are many in poor condition that have high traffic volumes. This could pose a serious risk to public safety. The results section also provides visuals, such as graphs, to get a better picture of the bridge condtions.
+This results present the findings of the analysis, which breaks down the number of bridges in each condition category (poor, fair, good). It identifies the bridges in poor conditions also carry high daily traffic volumes. From the results, we see that while most bridges are in fair or good condition, there are many in poor condition that have high traffic volumes. This could pose a serious risk to public safety. The results section also provides visuals, such as graphs, to get a better picture of the bridge conditions.
 
 ## Conclusion
 

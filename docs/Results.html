@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">references.html</span></a>
+ <span class="menu-text">References</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -240,6 +240,22 @@ ul.task-list li input[type="checkbox"] {
 <section id="bridge-traffic-vs-condition" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="bridge-traffic-vs-condition"><span class="header-section-number">4.2</span> Bridge Traffic vs Condition</h2>
 <div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>    Bridge             County            Year_Built   Daily_Crossings
+ Length:25          Length:25          Min.   :1931   Min.   : 7800  
+ Class :character   Class :character   1st Qu.:1960   1st Qu.: 9570  
+ Mode  :character   Mode  :character   Median :1964   Median :24360  
+                                       Mean   :1965   Mean   :26137  
+                                       3rd Qu.:1974   3rd Qu.:32795  
+                                       Max.   :1995   Max.   :85640  
+  Condition        
+ Length:25         
+ Class :character  
+ Mode  :character  
+                   
+                   
+                   </code></pre>
+</div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -269,12 +285,45 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "numeric"</code></pre>
 </div>
-<div class="cell-output cell-output-stdout">
-<pre><code>            Df Sum Sq Mean Sq F value Pr(&gt;F)
-Year_Built   1  0.073  0.0727   0.171  0.683
-Residuals   23  9.767  0.4247               </code></pre>
 </div>
-</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Df</th>
+<th>Sum Sq</th>
+<th>Mean Sq</th>
+<th>F Value</th>
+<th>Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Year Built</td>
+<td>1</td>
+<td>0.073</td>
+<td>0.0727</td>
+<td>0.171</td>
+<td>0.683</td>
+</tr>
+<tr class="even">
+<td>Residuals</td>
+<td>23</td>
+<td>9.767</td>
+<td>0.4247</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>An ANOVA was conducted to determine whether the year a bridge was built had a significant effect on it’s condition rating. The results indicated that their was no significant difference in condition based on year built, (F = 0.171, p = 0.683). This suggests that the age of a bridge alone does not predict its current condition and that it is important to consider other factors that may effect bridge condition.</p>
 </section>
 <section id="risk-level-assessment" class="level2" data-number="4.5">
@@ -287,12 +336,212 @@ Residuals   23  9.767  0.4247               </code></pre>
 </figure>
 </div>
 </div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Bridge Risk Level Assessment Based on Daily Crossings</caption>
+<colgroup>
+<col style="width: 47%">
+<col style="width: 11%">
+<col style="width: 17%">
+<col style="width: 11%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Bridge</th>
+<th style="text-align: left;">County</th>
+<th style="text-align: left;">Daily_Crossings</th>
+<th style="text-align: left;">Condition</th>
+<th style="text-align: left;">Risk_Level</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">US75 over J St</td>
+<td style="text-align: left;">Douglas</td>
+<td style="text-align: left;">85640</td>
+<td style="text-align: left;">Poor</td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">US75 over Stream</td>
+<td style="text-align: left;">Sarpy</td>
+<td style="text-align: left;">58870</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">72nd St/FAU 5037 over UPRR</td>
+<td style="text-align: left;">Douglas</td>
+<td style="text-align: left;">56260</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">US75 over Betz Creek</td>
+<td style="text-align: left;">Sarpy</td>
+<td style="text-align: left;">38095</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">42nd St/FAU 5057 over UPRR</td>
+<td style="text-align: left;">Douglas</td>
+<td style="text-align: left;">38000</td>
+<td style="text-align: left;">Poor</td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">42nd St/FAU 5057 over UPRR</td>
+<td style="text-align: left;">Douglas</td>
+<td style="text-align: left;">38000</td>
+<td style="text-align: left;">Poor</td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SB-I180/US34 over I80</td>
+<td style="text-align: left;">Lancaster</td>
+<td style="text-align: left;">32795</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">Moderate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NB-I180/US34 over I80</td>
+<td style="text-align: left;">Lancaster</td>
+<td style="text-align: left;">32795</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">Moderate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">N370 over Papillion Creek Trib</td>
+<td style="text-align: left;">Sarpy</td>
+<td style="text-align: left;">30705</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">Moderate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">US6 over Saddle Creek Rd</td>
+<td style="text-align: left;">Douglas</td>
+<td style="text-align: left;">26220</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">Moderate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">N50 over I80</td>
+<td style="text-align: left;">Sarpy</td>
+<td style="text-align: left;">26190</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">Moderate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">N38 over Big Papillion Creek</td>
+<td style="text-align: left;">Douglas</td>
+<td style="text-align: left;">26100</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">Moderate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">US275/N92 over 72nd Street</td>
+<td style="text-align: left;">Douglas</td>
+<td style="text-align: left;">24360</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">N 14th St/FAU 5227 over Oak Creek</td>
+<td style="text-align: left;">Lancaster</td>
+<td style="text-align: left;">21660</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">14th St over US6</td>
+<td style="text-align: left;">Lancaster</td>
+<td style="text-align: left;">19190</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WB-US30/US81 over Loup River</td>
+<td style="text-align: left;">Platte</td>
+<td style="text-align: left;">14395</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">US6 over Up/BNSF RR</td>
+<td style="text-align: left;">Lancaster</td>
+<td style="text-align: left;">11505</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">N31 over Park/Papio</td>
+<td style="text-align: left;">Douglas</td>
+<td style="text-align: left;">11100</td>
+<td style="text-align: left;">Poor</td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bell St over UPRR</td>
+<td style="text-align: left;">Dodge</td>
+<td style="text-align: left;">9570</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">US77 over Elm Creek</td>
+<td style="text-align: left;">Dodge</td>
+<td style="text-align: left;">9535</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">36th St/Fas 5061 over Papillion Creek</td>
+<td style="text-align: left;">Sarpy</td>
+<td style="text-align: left;">9470</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Hamiltn St/Fau5066 over US75</td>
+<td style="text-align: left;">Douglas</td>
+<td style="text-align: left;">8730</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">US30 over Fremont Co Drain Ditch</td>
+<td style="text-align: left;">Dodge</td>
+<td style="text-align: left;">8310</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norflk Ave/FAU6020 over N Fk Elkhorn River</td>
+<td style="text-align: left;">Madison</td>
+<td style="text-align: left;">8130</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I80 over Link 17B &amp; Rd 77</td>
+<td style="text-align: left;">Cheyenne</td>
+<td style="text-align: left;">7800</td>
+<td style="text-align: left;">Fair</td>
+<td style="text-align: left;">Low</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <p>This stacked bar chart analyzes the distribution of risk levels across Nebraska counties. Douglas County has the highest count of high-risk bridges, followed by Sarpy County. The majority of low-risk bridges are spread more evenly across counties. These results reinforce the need for targeted maintenance efforts in high-traffic Omaha areas.</p>
 </section>
 <section id="implications" class="level2" data-number="4.6">
 <h2 data-number="4.6" class="anchored" data-anchor-id="implications"><span class="header-section-number">4.6</span> Implications</h2>
-<p>These findings suggest that while there is some correlation between traffic volume and condition, other factors like age and maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions. Counties like Douglas and Sarpy currently require attention to ensure safety on their bridges.</p>
+<p>These findings suggest that while there is some correlation between traffic volume and condition, other factors like their maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions, which could be attributed to better funding. On the other hand, counties like Douglas and Sarpy, which have higher numbers of poor or fair-conditioned bridges require attention to ensure safety on.</p>
+<p>The data also reveals a concerning trend: bridges in poorer condition are likely to carry higher traffic volumes, which means placing more stress on vulnerable structures. This highlights a serious risk for disruptions in transportation if a collapse were to occur.</p>
+<p>In addition to age and traffic, maintenance history should be further considered in future assessments. While an ANOVA found no direct correlation between the year of construction and bridge condition, regular repairs play an important role in the safety of a bridge.</p>
 
 
 </section>
