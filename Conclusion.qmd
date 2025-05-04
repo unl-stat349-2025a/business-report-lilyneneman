@@ -10,3 +10,10 @@ The analysis reveals that bridges classified as being in "poor" condition are a 
 With that being said, it is clear that focusing on bridges in poor condition, especially those with heavy daily traffic, is critical for reducing risk to our city. These bridges should be prioritized for repairs and improvements. Additionally, while the year a bridge was built does not appear to significantly affect its current condition, ongoing maintenance is crucial for preventing problems in the future.
 
 In conclusion, it is essential to be proactive with this information for the safety of Omaha. Using this data Omaha can reduce the likelihood of bridge failures and ensure continued safety.
+
+## Recommendations
+
+1.  Prioritize Bridges in Poor Condition with High Traffic: Bridges like US75 over J St, which carry high traffic volumes and are in poor condition, should be prioritized for immediate repairs as these structures pose the highest risk to public safety
+2.  Focus on High-Risk Areas: Specific counties, such as Douglas and Sarpy, show a higher percentage of poor-condition bridges. These areas should be targeted.
+3.  Invest in Regular Inspections: To improve the accuracy of the data on bridge safety, regular inspections should be conducted.
+4.  Ongoing Maintenance: While the age of a bridge does not appear to directly impact the condition, the lack of regular maintenance can. All bridges, regardless of the year built should be regularly maintained to prevent any deterioration in the future.

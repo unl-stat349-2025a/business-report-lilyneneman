@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -108,12 +128,6 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./ExecutiveSummary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Executive Summary</span></span></a>
   </div>
@@ -159,6 +173,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./draft-data-doc.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Draft: Data Documentation</span></span></a>
   </div>
@@ -193,8 +213,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link active" data-scroll-target="#data-preparation"><span class="header-section-number">3.1</span> Data Preparation</a></li>
-  <li><a href="#statistical-analysis" id="toc-statistical-analysis" class="nav-link" data-scroll-target="#statistical-analysis"><span class="header-section-number">3.2</span> Statistical Analysis</a></li>
+  <li><a href="#data-documentation" id="toc-data-documentation" class="nav-link active" data-scroll-target="#data-documentation"><span class="header-section-number">3.1</span> Data Documentation</a></li>
+  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation"><span class="header-section-number">3.2</span> Data Preparation</a></li>
+  <li><a href="#statistical-analysis" id="toc-statistical-analysis" class="nav-link" data-scroll-target="#statistical-analysis"><span class="header-section-number">3.3</span> Statistical Analysis</a></li>
   </ul>
 </nav>
     </div>
@@ -221,24 +242,41 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>For this analysis, I used data from the Nebraska Department of Transportation and the National Bridge Inventory (NBI) to look at the condition of bridges across Nebraska. The data that I collected includes details about the bridges conditions, how much traffic they carry, the year they were built, and other factors that could be crucial to determining if repair is necessary.</p>
-<section id="data-preparation" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="data-preparation"><span class="header-section-number">3.1</span> Data Preparation</h2>
+<p>The methods applied gave a comprehensive overview of the current state of many Nebraska bridges, focusing on identifying the infrastructure at the highest risk. By combining visualizations and statistical tests, the analysis aims to provide insights for decision-makers regarding bridge safety in Omaha.</p>
+<section id="data-documentation" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="data-documentation"><span class="header-section-number">3.1</span> Data Documentation</h2>
+<ol type="1">
+<li><p>Nebraska Department of Transportation <span class="citation" data-cites="noauthor_bridge_nodate"><span>“Bridge - <span>NDOT</span>”</span> (<a href="references.html#ref-noauthor_bridge_nodate" role="doc-biblioref">n.d.</a>)</span></p>
+<p>This data from March 2024 categorizes Nebraska’s bridges by ownership type and their condition after inspection. It shows the number of bridges, their total area, and the condition of each bridge (good, fair, poor, closed, and low load).</p></li>
+<li><p>American Road &amp; Transportation Builders Association (National Bridge Inventory: Nebraska) <span class="citation" data-cites="noauthor_artba_nodate"><span>“<span>ARTBA</span> <span>Bridge</span> <span>Report</span>”</span> (<a href="references.html#ref-noauthor_artba_nodate" role="doc-biblioref">n.d.</a>)</span></p>
+<p>This breaks down what bridges in Nebraska need repair. It sorts them in different ways like the country the most traveled bridges are in and includes the year build and number of daily crossings. It also includes bridge work that has been proposed and how much these repairs would cost.</p></li>
+</ol>
+</section>
+<section id="data-preparation" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="data-preparation"><span class="header-section-number">3.2</span> Data Preparation</h2>
 <ol type="1">
 <li>Bridge Condition Data: The condition of each bridge was classified into four categories: Good, Fair, Poor, and Closed. The data was then sorted by different bridge systems in Nebraska, like the County System and the State System. This was important to understanding how bridges across the entire state were doing.</li>
 <li>Traffic Data: The data set included information for specific bridges. Specifically it included the number of vehicles crossing each bridge daily. This gave insight to which bridges might be under more stress on a daily basis.</li>
 <li>Risk Level Calculation: To figure out which bridges pose the highest risk, I assigned a level to each one. Bridges in poor condition with more than 30,000 vehicles crossing each day were labeled as high risk. Bridges in poor condition with fewer that 30,000 vehicles, or bridges in fair condition with more than 30,000 vehicles, were considered moderate risk. All other bridges were considered low risk.</li>
 </ol>
 </section>
-<section id="statistical-analysis" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="statistical-analysis"><span class="header-section-number">3.2</span> Statistical Analysis</h2>
+<section id="statistical-analysis" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="statistical-analysis"><span class="header-section-number">3.3</span> Statistical Analysis</h2>
 <ol type="1">
 <li>Visual Analysis: I created multiple charts and graphs to help better visualize the data. These included bar charts and scatter plots which displayed how traffic volume and bridge condition. These charts helped to identify trends and any unusual data points.</li>
 <li>ANOVA: To identify if the age of a bridge (how long since it has been built) affects its condition, I used an Analysis of Variance test. This test determined if there is a significant difference in the condition of bridge levels based on when they were built.</li>
 <li>Risk Level Distribution: I created a stacked bar chart to visualize how the risk levels were distributed across counties in Nebraska to determine which counties had the most high-risk bridges.</li>
 </ol>
-<p>The methods applied gave a comprehensive overview of the current state of many Nebraska bridges, focusing on identifying the infrastructure at the highest risk. By combining visualizations and statistical tests, the analysis aims to provide insights for decision-makers regarding bridge safety in Omaha.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-noauthor_artba_nodate" class="csl-entry" role="listitem">
+<span>“<span>ARTBA</span> <span>Bridge</span> <span>Report</span>.”</span> n.d. Accessed April 25, 2025. <a href="https://artbabridgereport.org">https://artbabridgereport.org</a>.
+</div>
+<div id="ref-noauthor_bridge_nodate" class="csl-entry" role="listitem">
+<span>“Bridge - <span>NDOT</span>.”</span> n.d. Accessed May 4, 2025. <a href="https://dot.nebraska.gov/business-center/bridge/">https://dot.nebraska.gov/business-center/bridge/</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -675,7 +713,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Copyright 2025, Author Name</p>
+<p>Copyright 2025, Lily Neneman</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

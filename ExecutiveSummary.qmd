@@ -3,13 +3,13 @@ title: "Executive Summary"
 editor: visual
 ---
 
-This report was created in response to the mayor's concern about bridge safety in Omaha, NE after several bridge collapses on the East Coast in 2024. Using data from the Nebraska Department of Transportation and the National Bridge Inventory, I looked at the current condition of bridges not only in Omaha, but across the state of Nebraska. Bridges were rated as being in poor, fair, or good condition. It was also taken into consideration if they were a high traffic bridge or not.
+This report was created in response to the mayor's concern about bridge safety in Omaha, NE after several bridge collapses on the East Coast in 2024. Using data from the Nebraska Department of Transportation [@noauthor_artba_nodate] and the National Bridge Inventory [@noauthor_bridge_nodate], I looked at the current condition of bridges not only in Omaha, but across the state of Nebraska. Bridges were rated as being in poor, fair, or good condition. It was also taken into consideration if they were a high traffic bridge or not.
 
 Although it is hard to predict exactly if or when a bridge may collapse, this data shows that some bridges in the area could be a potential risk to the public if not repaired. The bridges that were inspected to be in poor condition and that carry the most traffic on a daily basis raise the most concern to our city.
 
 To reduce the chances of a collapse occurring, Omaha should invest in repairs to bridges that are used more frequently. Being proactive about these issues will keep people safe and prevent a major bridge collapse in the future.Executive Summary
 
-The report is organized into the following section:
+The report is organized into the following sections:
 
 ## Introduction and Background
 

@@ -136,4 +136,8 @@ This stacked bar chart analyzes the distribution of risk levels across Nebraska 
 
 ## Implications
 
-These findings suggest that while there is some correlation between traffic volume and condition, other factors like age and maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions. Counties like Douglas and Sarpy currently require attention to ensure safety on their bridges.
+These findings suggest that while there is some correlation between traffic volume and condition, other factors like their maintenance history, are likely influencing the conditions of bridges in Nebraska. The State System generally maintains the best conditions, which could be attributed to better funding. On the other hand, ounties like Douglas and Sarpy, which have higher numbers of poor or fair-conditioned bridges require attention to ensure safety on.
+
+The data also reveals a concerning trend: bridges in poorer condition are likely to carry higher traffic volumes, which means placing more stress on vulnerable structures. This highlights a serious risk for disruptions in transportation if a collapse were to occur.
+
+In addition to age and traffic, maintenance history should be further considered in future assessments. While an ANOVA found no direct correlation between the year of construction and bridge condition, regular repairs play an important role in the safety of a bridge. 

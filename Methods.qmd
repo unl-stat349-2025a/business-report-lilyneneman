@@ -5,6 +5,18 @@ editor: visual
 
 For this analysis, I used data from the Nebraska Department of Transportation and the National Bridge Inventory (NBI) to look at the condition of bridges across Nebraska. The data that I collected includes details about the bridges conditions, how much traffic they carry, the year they were built, and other factors that could be crucial to determining if repair is necessary.
 
+The methods applied gave a comprehensive overview of the current state of many Nebraska bridges, focusing on identifying the infrastructure at the highest risk. By combining visualizations and statistical tests, the analysis aims to provide insights for decision-makers regarding bridge safety in Omaha.
+
+## Data Documentation
+
+1.  Nebraska Department of Transportation @noauthor_bridge_nodate
+
+    This data from March 2024 categorizes Nebraska's bridges by ownership type and their condition after inspection. It shows the number of bridges, their total area, and the condition of each bridge (good, fair, poor, closed, and low load).
+
+2.  American Road & Transportation Builders Association (National Bridge Inventory: Nebraska) @noauthor_artba_nodate
+
+    This breaks down what bridges in Nebraska need repair. It sorts them in different ways like the country the most traveled bridges are in and includes the year build and number of daily crossings. It also includes bridge work that has been proposed and how much these repairs would cost.
+
 ## Data Preparation
 
 1.  Bridge Condition Data: The condition of each bridge was classified into four categories: Good, Fair, Poor, and Closed. The data was then sorted by different bridge systems in Nebraska, like the County System and the State System. This was important to understanding how bridges across the entire state were doing.
@@ -16,5 +28,3 @@ For this analysis, I used data from the Nebraska Department of Transportation an
 1.  Visual Analysis: I created multiple charts and graphs to help better visualize the data. These included bar charts and scatter plots which displayed how traffic volume and bridge condition. These charts helped to identify trends and any unusual data points.
 2.  ANOVA: To identify if the age of a bridge (how long since it has been built) affects its condition, I used an Analysis of Variance test. This test determined if there is a significant difference in the condition of bridge levels based on when they were built.
 3.  Risk Level Distribution: I created a stacked bar chart to visualize how the risk levels were distributed across counties in Nebraska to determine which counties had the most high-risk bridges.
-
-The methods applied gave a comprehensive overview of the current state of many Nebraska bridges, focusing on identifying the infrastructure at the highest risk. By combining visualizations and statistical tests, the analysis aims to provide insights for decision-makers regarding bridge safety in Omaha.

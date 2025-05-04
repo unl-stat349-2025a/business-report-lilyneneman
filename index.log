@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.30)  25 APR 2025 10:36
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.30)  28 APR 2025 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,78 +929,48 @@ chapter 1.
 [5
 
 ]
+
+[6]
 chapter 2.
 
 
-[6
+[7
 
 ]
-
-[7]
 chapter 3.
 
 
 [8
 
 ]
+
+[9]
 chapter 4.
-
-
-[9
-
-]
-chapter 5.
-
-
-[10
-
-]
-chapter 6.
-
-
-[11
-
-]
-
-[12]
-chapter 7.
-
-
-[13
-
-]
-chapter 8.
 File: Results_files/figure-pdf/unnamed-chunk-1-1.pdf Graphic file (type pdf)
 <use Results_files/figure-pdf/unnamed-chunk-1-1.pdf>
 File: Results_files/figure-pdf/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 <use Results_files/figure-pdf/unnamed-chunk-2-1.pdf>
 
 
-[14
+[10
 
 ]
 File: Results_files/figure-pdf/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 <use Results_files/figure-pdf/unnamed-chunk-3-1.pdf>
 
 
-[15]
+[11]
 File: Results_files/figure-pdf/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 <use Results_files/figure-pdf/unnamed-chunk-5-1.pdf>
 
 
-[16]
+[12]
 
-[17]
-chapter 9.
-
-
-[18
-
-]
-chapter 10.
+[13]
+chapter 5.
 
 
-[19
+[14
 
 ]
 
@@ -1010,15 +980,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.628 \end{CSLReferences}
+l.608 \end{CSLReferences}
                           
 Here is how much of TeX's memory you used:
- 23960 strings out of 475791
- 462979 string characters out of 5771670
- 1175655 words of memory out of 5000000
- 46627 multiletter control sequences out of 15000+600000
+ 23955 strings out of 475791
+ 462949 string characters out of 5771670
+ 1175771 words of memory out of 5000000
+ 46622 multiletter control sequences out of 15000+600000
  562417 words of font info for 67 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  108i,8n,123p,10900b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on index.pdf (19 pages).
+Output written on index.pdf (14 pages).

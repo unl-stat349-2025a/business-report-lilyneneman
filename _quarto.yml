@@ -6,9 +6,8 @@ book:
   title: "Evaluation of Omaha Bridges"
   author: "Lily Neneman"
   page-footer:
-    left: "Copyright 2025, Author Name"
+    left: "Copyright 2025, Lily Neneman"
   chapters:
-    - index.qmd
     - ExecutiveSummary.qmd
     - Introduction.qmd
     - Methods.qmd
@@ -16,6 +15,7 @@ book:
     - Conclusion.qmd
     - references.qmd
   appendices:
+    - index.qmd
     - draft-data-doc.qmd
     - draft-results.qmd
     - draft-intro-conclusions.qmd
